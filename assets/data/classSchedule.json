@@ -1,0 +1,155 @@
+[
+ {
+  "Course": "Advanced Empirical Modeling of Social Science Theory",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "SKB 2140",
+  "Instructor": "Rob Franzese"
+ },
+ {
+  "Course": "Bayesian Modeling for the Social Sciences II: Advanced Topics",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "NUB 1528",
+  "Instructor": "Marc Ratkovic"
+ },
+ {
+  "Course": "Categorical Data Analysis: Models for Categorical, Ordinal, and Count Outcomes",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "SKB 3600",
+  "Instructor": "Olga Chyzh and Dr. Mark Nieman"
+ },
+
+ {
+  "Course": "Caustal Inference for Social Sciences II",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "CCCB 3420",
+  "Instructor": "Sebastian Calonico and Dr. Gonzalo Vazquez-Bare"
+ },
+ 
+ {
+  "Course": "Data Science and Text Analysis",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "CCCB 3420",
+  "Instructor": "Jared Edgerton, Dr. Kelsey Shoub and Dr. Caleb Pomeroy"
+ },
+
+ {
+  "Course": "Game Theory",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "SKB 2060",
+  "Instructor": "John Patty"
+ },
+ {
+  "Course": "Maximum Likelihood Estimation II: Advanced Topics",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "SKB 2140",
+  "Instructor": "Desmond Wallace"
+ },
+ {
+  "Course": "Multilevel Models II: Advanced Topics",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "CCCB 3460",
+  "Instructor": "John Poe"
+ },
+ {
+  "Course": "Network Analysis II: Advanced Topics",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "SKB 3600",
+  "Instructor": "Shahryar Minhas and Dr. Olga Chyzh"
+ },
+ 
+ {
+  "Course": "Panel Data and Longitudinal Analysis",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "CCCB 3460",
+  "Instructor": "Mark Pickup and Dr. Andy Philips"
+ },
+
+ {
+  "Course": "Race, Ethnicity, and Quantitative Methodology II",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "SKB 2200",
+  "Instructor": "Kenicia Wright"
+ },
+ {
+  "Course": "Regression Analysis II: Linear Models",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "EHB 844",
+  "Instructor": "Robert Cooper"
+ },
+ {
+  "Course": "Social Choice Theory",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "SKB 2050",
+  "Instructor": "Maggie Penn"
+ },
+ {
+  "Course": "Statistics and Data Analysis II: The Basics of Regression",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "LSA 3254",
+  "Instructor": "Shane Singh"
+ },
+ {
+  "Course": "Structural Equation Models with Latent Variables",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "NUB 1528",
+  "Instructor": "Sandy Marquart-Pyatt"
+ },
+ {
+  "Course": "Time Series Analysis II: Advanced Topics",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "2:00 pm- 5:00 pm",
+  "Location": "SKB 2200",
+  "Instructor": "Matthew Lebo and Dr. Paul Kellstedt "
+ },
+
+ {
+  "Course": "Introductory Matrix Algebra, Calculus, and Probability Review",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "8:30 am - 10:00 am",
+  "Location": "CCCB 3420",
+  "Instructor": "Tim McDaniel"
+ },
+ {
+  "Course": "Introduction to Python",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "6:00 pm - 7:30 pm",
+  "Location": "BSB 1060",
+  "Instructor": "Omer Yalcin"
+ },
+ {
+  "Course": "Introduction to the LaTeX Text Processing System",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "6:00 pm -8:00 pm",
+  "Location": "BSB 1060",
+  "Instructor": "Omer Yalcin"
+ },
+ {
+  "Course": "Introduction to the R Statistical Computing Environment",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "7:30 pm - 9:00 pm",
+  "Location": "BSB 1060",
+  "Instructor": "Sarah Hunter"
+ },
+ {
+  "Course": "Introduction to Computing for Data Analysis",
+  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Time": "5:00 pm - 6:00 pm",
+  "Location": "LSA 1280",
+  "Instructor": "Michael Hawthorne"
+ }
+]
