@@ -68,6 +68,7 @@ const Events = ({navigation}) => {
   );
 };
 
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -77,7 +78,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logo: {
-    marginTop: '5%',
+    marginTop: '10%',
     width: '65%',
     height: '5%',
     marginBottom: '10%',

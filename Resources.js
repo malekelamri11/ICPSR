@@ -36,7 +36,7 @@ const Resources = ({navigation}) => {
 
   return (
     <View style={styles.container}>
-      
+
       <ScrollView >
         <View style={styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
@@ -64,9 +64,9 @@ const styles = StyleSheet.create({
   scroll: { alignItems: 'center'},
   logo: {
     marginTop: '10%',
-    width: '65%',
-    height: '5%',
-    marginBottom: '12%',
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
   },
   title: {
     fontSize: 24,

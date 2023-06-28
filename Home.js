@@ -99,13 +99,13 @@ const HomeScreen = ({navigation}) => {
       <ScrollView >
         <View style= {styles.scrollview}>
           <View style= {styles.menuLogoContainer}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={handleResources}>
         <Entypo name="menu" size={45} color="#115BFB" style={styles.menuIcon} />
         </TouchableOpacity>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       </View>
       <TouchableOpacity  style={styles.button} onPress={handleAnnouncement}>
-     
+        {/* <Image source={require('./assets/yellfla.png')} style={styles.flag} /> */}
         <Image source={require('./assets/whiteAnnouncement.png')} style={styles.icon} />
         {/* <MaterialIcons name="volume-up" size={24} color="white" style={styles.icon} /> */}
         <Text style={styles.buttonText}>Announcements</Text>

@@ -38,11 +38,10 @@ const styles = StyleSheet.create({
 
   },
   logo: {
+    marginTop: '10%',
 
-    marginTop: '8%',
-    width: '70%',
-    height: '7%',
-    
+    width: 240,
+    height: 50,
     marginBottom: '15%',
   },
   heading: {

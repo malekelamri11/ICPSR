@@ -151,10 +151,10 @@ export default function App() {
 const WelcomeScreen = ({navigation}) => {
   const loadFonts = async () => {
   await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
+    'AHBold':require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
+    'AHBoldItalic':require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
+    'AHItalic':require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
+    'AHRegular':require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
   });
   console.log('fonts loaded')
 };

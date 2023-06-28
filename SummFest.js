@@ -1,6 +1,8 @@
 import React, {useEffect} from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, Linking, ScrollView } from 'react-native';
 import BottomNavigation from './BottomNavigation';
+import { MaterialIcons, Entypo } from '@expo/vector-icons';
+
 import * as Font from 'expo-font';
 
 const SummerFest = ({route, navigation}) => {
@@ -48,7 +50,7 @@ const SummerFest = ({route, navigation}) => {
       <Text style={styles.eventDate}>{data.date}</Text>
       <Text style={styles.description}> { data.description}</Text>
       <View style={styles.locationContainer}>
-      <Image source={require('./assets/Vector.png')} style={styles.vector} />
+      <Entypo name="location-pin" size={20} color="#000000" style={styles.vector} />
       <Text style={styles.locationText}> {data.location} </Text>
       </View>
       {data.location2 !== '' ? (
@@ -155,7 +157,7 @@ const styles = StyleSheet.create({
     flexDirection : 'row'
   },
   vector: {
-    marginTop: '1%',
+    marginTop: '0%',
     marginLeft : '7%',
   },
   locationText: {

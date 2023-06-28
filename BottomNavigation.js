@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
+import { MaterialIcons, Entypo } from '@expo/vector-icons';
 
 
 
@@ -23,16 +24,19 @@ const BottomNavigation = ({navigation}) => {
     <View style={styles.screenContainer}>
         <View style={styles.footer} >
         <TouchableOpacity onPress={handleHome}>
-        <Image style={styles.footerIcon} source={require('./assets/home.png')}></Image>
+        <Entypo name="home" size={45} color="#FFFFFF" style={styles.menuIcon} />
+
+
+
       </TouchableOpacity>
       <TouchableOpacity onPress={handleCompass}>
-        <Image style={styles.footerIcon} source={require('./assets/compass.png')}></Image>
+      <Entypo name="location-pin" size={45} color="#FFFFFF" style={styles.menuIcon} />
       </TouchableOpacity>
       <TouchableOpacity onPress={handleResources}>
-        <Image style={styles.footerIcon} source={require('./assets/search.png')}></Image>
+      <Entypo name="menu" size={45} color="#FFFFFF" style={styles.menuIcon} />
       </TouchableOpacity>
       <TouchableOpacity onPress={handleSupport}>
-        <Image style={styles.footerIcon} source={require('./assets/support.png')}></Image>
+      <Entypo name="help" size={45} color="#FFFFFF" style={styles.menuIcon} />
       </TouchableOpacity>
       
       
@@ -59,6 +63,7 @@ const styles = StyleSheet.create({
     flexDirection : 'row',
     justifyContent : 'space-between',
     paddingHorizontal : '9%',
+    
     alignItems: 'center',
     
     borderTopLeftRadius: 25,
@@ -67,7 +72,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#020BA9',
     
   },
+  support: {
+    marginTop: '-5%',
+    width: 60,
+    height: 60,
+    marginBottom: '15%',
+  },
+  
 
 });
+ 
 
 export default BottomNavigation;

@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Linking } from 'react-native';
+
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
@@ -23,8 +24,9 @@ const Announcements = ({navigation}) => {
     loadFonts();
   }, []);
   const handleLinkPress = () => {
-    Linking.openURL('https://gettextbookumich')
+    Linking.openURL('https://wolverineaccess.umich.edu/task/all/textbooks')
   }
+  
   return (
     <View style={styles.container}>
       <Logo />
@@ -81,12 +83,14 @@ const styles = StyleSheet.create({
     marginTop: '7%',
     alignItems: 'center',
   },
+  
   logo: {
-
-    width: '72%',
-    alignSelf : 'center',
-    marginBottom: '10%',
+   
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
   },
+  
   squareContainer: {
     marginTop: "10%",
     flexDirection: 'column',
