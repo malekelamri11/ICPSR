@@ -9,7 +9,7 @@ const BuildingDetails = ({route, navigation}) => {
     <View style={styles.container}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       <Text style={styles.heading}>University buildings acronyms</Text>
-      <Text style={styles.boldText}>Building acronym name and location for {acronym} are:</Text>
+      <Text style={styles.boldText}>The building acronym name and location for {acronym} are:</Text>
       <Text style={styles.normalText}>Name: {name}.</Text>
       <Text style={styles.normalText}>Location: {location}.</Text>
       
