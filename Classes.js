@@ -53,12 +53,10 @@ const styles = StyleSheet.create({
     marginBottom: '50%'
   },
   logo: {
-    alignSelf: 'center',
     marginTop: '10%',
-    width: '60%',
-    height: '5%',
-    marginBottom: '5%',
-  
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
   },
   
   title: {

@@ -31,7 +31,7 @@ const SummerFest = ({route, navigation}) => {
       imagePath = require('./assets/events/pride.png');
       break;
     default:
-      imagePath = require('./assets/events/default.png');
+      imagePath = require('./assets/events/summerFest.png');
   }
     const handleMoreInfo = () => {
       Linking.openURL(data.url)
@@ -77,12 +77,14 @@ const styles = StyleSheet.create({
     flex: 1,
     
   },
+
+
   logo: {
     alignSelf: 'center',
-    marginTop: '3%',
-    width: '70%',
-    height: '5%',
-    marginBottom: '8%',
+    marginTop: '10%',
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
   },
   title: {
     fontSize: 24,

@@ -169,11 +169,11 @@ useEffect(() => {
       <View style={styles.container}>
         <ScrollView>
       <View style={styles.logoContainer}>
-        {/* Add your logo component here */}
+   
         <Image source={require('./assets/logo.png')} style={styles.logo} />
       </View>
       <View style={styles.contentContainer}>
-        {/* <Text style={styles.title}>WELCOME</Text> */}
+       
         <Text style={{marginTop: '25%', fontSize: 20, marginBottom : '30%', fontFamily: "AHItalic"}}>2023 ICPSR Summer Program</Text>
       </View>
       
@@ -206,10 +206,9 @@ const styles = StyleSheet.create({
     marginTop: '2%',
     width: '100%',
     height: '30%',
-    marginBottom: '5%',
+    marginBottom: '0%',
   },
   logoContainer: {
-    // Add styling for logo container if needed
     marginTop: "50%"
     
     
