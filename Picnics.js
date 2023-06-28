@@ -48,10 +48,11 @@ const styles = StyleSheet.create({
   },
   logo: {
     marginTop: '10%',
-    width: '70%',
-    height: '6%',
+    width: 240,
+    height: 50,
     marginBottom: '15%',
   },
+  
   heading: {
     alignSelf: 'flex-start',
     fontSize: 24,
