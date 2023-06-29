@@ -26,7 +26,12 @@ const Announcements = ({navigation}) => {
   const handleLinkPress = () => {
     Linking.openURL('https://wolverineaccess.umich.edu/task/all/textbooks')
   }
-  
+  const handleWelcome = () => {
+    navigation.navigate('WelcomeToProgram')
+  }
+  const handlePreparation = () => {
+    navigation.navigate('Preparation')
+  }
   return (
     <View style={styles.container}>
       <Logo />

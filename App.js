@@ -24,9 +24,13 @@ import BuildingDetails from './BuildingDetail';
 import CourseDetails from './CourseDetails';
 import Picnics from './Picnics';
 import * as Font from 'expo-font';
+import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
+LogBox.ignoreLogs(['ViewPropTypes will be removed']);
+LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
+LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
 
 export default function App() {
   return (
@@ -151,10 +155,10 @@ export default function App() {
 const WelcomeScreen = ({navigation}) => {
   const loadFonts = async () => {
   await Font.loadAsync({
-    'AHBold':require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic':require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic':require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular':require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
+    AHBold:require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
+    AHBoldItalic:require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
+    AHItalic:require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
+    AHRegular:require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
   });
   console.log('fonts loaded')
 };
@@ -174,11 +178,12 @@ useEffect(() => {
       </View>
       <View style={styles.contentContainer}>
        
-        <Text style={{marginTop: '25%', fontSize: 20, marginBottom : '30%', fontFamily: "AHItalic"}}>2023 ICPSR Summer Program</Text>
-      </View>
+        <Text style={styles.title} >2023 ICPSR Summer Program</Text>
+    
+        </View>
       
         <TouchableOpacity style={styles.button} onPress={handleContinue}>
-          <Text style={{color: 'white', fontSize: 32, fontFamily: "AHRegular"}}>Continue</Text>
+          <Text style={styles.buttonText}>Continue</Text>
         </TouchableOpacity>
         
       
@@ -206,7 +211,7 @@ const styles = StyleSheet.create({
     marginTop: '2%',
     width: '100%',
     height: '30%',
-    marginBottom: '0%',
+    marginBottom: '5%',
   },
   logoContainer: {
     marginTop: "50%"
@@ -219,7 +224,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 64,
     fontWeight: 400,
+    fontFamily: 'AHBold',
+    marginBottom : '30%',
+    marginTop: '25%',
+    fontSize: 20,
     margin: '5%'
+   
+   
   },
   subtitle: {
     
@@ -242,7 +253,10 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     
-    
+    color: 'white', 
+    fontSize: 32, 
+    fontWeight: 400,
+    fontFamily: 'AHBold'
     
   },
 });
