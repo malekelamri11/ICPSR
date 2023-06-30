@@ -25,31 +25,15 @@ const Welcome = ({navigation}) => {
     As you will see, the Summer Program comprises an extremely diverse set of people. We're very proud of this diversity and consider it an important strength of the program. We ask (and expect) everyone to respect the diversity and individual rights of all other members of the Summer Program community. If, at any time during your participation in the Summer Program, you feel that this respect has been violated, then please let us know immediately. In this handbook you can find further information, including the University of Michigan's official diversity statement and the names of several individuals you can contact about incidents involving problematic behaviour.
     Once again, many thanks for participating in the 2023 ICPSR Summer Program! If you have any questions, need additional assistance, or would just like to talk, please do not hesitate to contact me or any of the other Summer Program staff members. You can also contact all staff at sumprog@icpsr.umich.edu.
     We want you to have a great time here at the "Summer Camp for Social Scientists"!
-    Robert Franzese
-    Director, ICPSR Summer Program
+    {'\n'}Robert Franzese
+    {'\n'}Director, ICPSR Summer Program
     </Text>
   </View>
   </ScrollView>
   <BottomNavigation navigation={navigation}/>
 </View>
 );
-};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
- 
+}; 
 
 const styles = StyleSheet.create({
   container: {
@@ -62,11 +46,13 @@ const styles = StyleSheet.create({
     marginBottom: '50%'
   },
   logo: {
-    marginTop: '10%',
+   
     alignSelf: 'center',
-    width: 242,
-    height: 40,
-    marginBottom: '12%',
+    marginTop: '10%',
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
+   
   },
   heading: {
     fontSize: 24,

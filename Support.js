@@ -57,11 +57,12 @@ const styles = StyleSheet.create({
     borderBottomColor: 'black',
   },
   logo: {
-    marginTop: '5%',
-    width: '65%',
-    height: '7%',
-    alignSelf : 'center',
+    marginTop: '10%',
+    width: 240,
+    height: 50,
     marginBottom: '15%',
+    alignSelf : 'center',
+     
   },
   text: {
     textAlign : 'left',
