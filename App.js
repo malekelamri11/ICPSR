@@ -27,6 +27,8 @@ import Preparation from './Preparation' ;
 import InstructorDetails from './InstructorDetails';
 import Welcome from './Welcome';
 import Picnics from './Picnics';
+import Coffee from './Coffee'
+ 
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -107,6 +109,13 @@ useEffect(() => {
       component={Picnics}
       options={{title:'Back'}}
       />
+
+      <Stack.Screen
+      name = "Coffee"
+      component={Coffee}
+      options={{title:'Back'}}
+      />
+       
       <Stack.Screen
       name = "Resources"
       component={Resources}

@@ -65,7 +65,7 @@ const BuildingAcronyms = ({navigation}) => {
       <ScrollView>
         <View style= {styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
-      <Text style={styles.title}>University Buildings Acronyms</Text>
+      <Text style={styles.title}>University buildings acronyms and locations</Text>
       <Text style={styles.subtitle}>What buildings are you searching?</Text>
       <View style={styles.pickerContainer}>
       <Picker
