@@ -2,55 +2,57 @@
  {
   "Acronym": "BSB",
   "Name": "Biological Sciences Building ",
-  "Location": "SKB1105 North University Ave. ",
+  "Location": "1105 N University Ave",
+  "url": "https://www.google.com/maps/place/Biological+Sciences+Building/@42.2788651,-83.7371026,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae43c58d85ef:0x4f9a4c5bd7ab75ed!8m2!3d42.2788651!4d-83.7345223!16s%2Fg%2F11dxbsrd61?entry=ttu",
   "Id": 1
  },
  {
   "Acronym": "CCCB",
   "Name": "Central Campus Classroom Building",
-  "Location": "1225 Geddes Ave. ",
+  "Location": "1225 Geddes Ave",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu",
   "Id": 2
  },
  {
   "Acronym": "CHEM",
   "Name": "Chemistry Building",
-  "Location": "930 University Ave. ",
+  "Location": "930 University Ave",
+  "url":"https://www.google.com/maps/place/Chemistry+Building/@42.2780183,-83.7395994,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae415d3eadf1:0x3406847a0801194c!8m2!3d42.2780183!4d-83.7370191!16s%2Fg%2F1tf2ygjh?entry=ttu",
   "Id": 3
  },
  {
   "Acronym": "LSA",
   "Name": "Literature, Science, & the Arts Building",
-  "Location": "500 S. State St.",
+  "Location": "500 S. State St",
+  "url":"https://www.google.com/maps/place/University+of+Michigan+College+of+Literature,+Science,+and+the+Arts/@42.2761921,-83.7438871,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae475e2750c3:0xcc53a783dd1dab18!8m2!3d42.2761921!4d-83.7413068!16zL20vMDhtaGpk?entry=ttu",
   "Id": 4
  },
  {
   "Acronym": "MH",
   "Name": "Mason Hall",
-  "Location": "419 S. State St. ",
+  "Location": "419 S. State St",
+  "url": "https://www.google.com/maps/place/Mason+Hall/@42.2770875,-83.7442887,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae4733a248a1:0x405ee0a4a0715a01!8m2!3d42.2770876!4d-83.7394124!16s%2Fg%2F11bxf45xgq?entry=ttu",
   "Id": 5
  },
  {
   "Acronym": "NQ",
-  "Name": "North Quad",
-  "Location": "105 State St ",
+  "Name": "North Quadrangle Residential and Academic Complex",
+  "Location": "105 State St",
+  "url":"https://www.google.com/maps/place/North+Quadrangle+Residential+and+Academic+Complex/@42.2804947,-83.7427505,17z/data=!3m2!4b1!5s0x883cae406c0e844b:0x3f6a79beb41f847a!4m6!3m5!1s0x883cae406bf1f7cb:0xefd29040373a695a!8m2!3d42.2804947!4d-83.7401702!16s%2Fg%2F1tgtg4xk?entry=ttu",
   "Id": 6
  },
  {
   "Acronym": "SKB",
   "Name": "School of Kinesiology Building",
-  "Location": "830 North University Ave.",
+  "Location": "830 North University Ave",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu",
   "Id": 7
  },
  {
   "Acronym": "WEIS",
   "Name": "Weiser Hall",
-  "Location": "500 Church St.",
+  "Location": "500 Church St",
+  "url":"https://www.google.com/maps/place/Weiser+Hall/@42.2768016,-83.7376991,17z/data=!3m2!4b1!5s0x883cae440f7f3517:0x6ca424771d19d890!4m6!3m5!1s0x883cae440f1061fd:0xf3c43cc4fee3ad8b!8m2!3d42.2768016!4d-83.7351188!16s%2Fg%2F12vrq6hw9?entry=ttu",
   "Id": 8
- },
- {
-  "Acronym": "ABC",
-  "Name": "BUILDING ABC",
-  "Location": "500 Church St.",
-  "Id": 9
  }
 ]

@@ -1,10 +1,10 @@
  import React, {useEffect} from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, StyleSheet, Image, Linking } from 'react-native';
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
 const BuildingDetails = ({route, navigation}) => {
-    const {acronym, location, name} = route.params;
+    const {acronym, location, name, url} = route.params;
     const loadFonts = async () => {
       await Font.loadAsync({
         'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -14,7 +14,14 @@ const BuildingDetails = ({route, navigation}) => {
       });}
       useEffect(() => {
         loadFonts();
-      }, []);
+     
+      }, 
+      
+      [])
+       const handleBuildingLocation = () => {
+          Linking.openURL(url)
+        }
+      ;
     
   return (
     <View style={styles.container}>
@@ -22,7 +29,7 @@ const BuildingDetails = ({route, navigation}) => {
       <Text style={styles.heading}>University buildings acronyms</Text>
       <Text style={styles.boldText}>The building acronym name and location for {acronym} are:</Text>
       <Text style={styles.normalText}>Name: {name}.</Text>
-      <Text style={styles.normalText}>Location: {location}.</Text>
+      <Text style={styles.locationText} onPress={handleBuildingLocation}>Location: {location}.</Text>
       
       <BottomNavigation navigation={navigation}/>
       
@@ -65,6 +72,19 @@ const styles = StyleSheet.create({
     paddingHorizontal: '10%',
     marginBottom: '1%',
   },
+  locationText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHItalic',
+    fontSize: 16,
+    paddingHorizontal: '10%',
+    textAlign: 'justify',
+    marginBottom: '1%',
+    color: '#115BFB',
+
+
+
+  },
+
 });
 
 export default BuildingDetails;

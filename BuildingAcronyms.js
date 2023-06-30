@@ -55,6 +55,7 @@ const BuildingAcronyms = ({navigation}) => {
         acronym: selectedItem.Acronym,
         location: selectedItem.Location,
         name: selectedItem.Name,
+        url: selectedItem.url
       });
     }
   }
