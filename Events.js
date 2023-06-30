@@ -11,6 +11,8 @@ const Events = ({navigation}) => {
     { id: '5', name: 'Art fair', date: 'July 20, 2023 - July 22, 2023', url:'https://www.annarbor.org/events/ann-arbor-art-fair/?gclid=EAIaIQobChMIn_yeg_XF_wIVsw-zAB3RSA5SEAAYASAAEgI25PD_BwE', location:'Downtown Ann Arbor', location2:'', img:'./assets/events/artFair.png', description: 'The Ann Arbor Art Fair is a Midwest tradition that draws close to half a million attendees over three days in July.' },
     { id: '6', name: 'Second picnic', date: 'July 29, 2023', location:'location', location2:'', url:'#', img:'./assets/events/summerFest.png', description: 'description' },
     { id: '7', name: 'Pride', date: 'August 5, 2023', location:'Downtown Ann Arbor', location2:'', url:'https://www.annarbor.org/event/ann-arbor-pride/12008/', img:'./assets/events/pride.png', description:'Ann Arbor Pride is a weekend festival in Ann Arbor, Michigan, celebrating lesbian, gay, bisexual, transgender, queer identities, community, and allyship hosted by the Jim Toy Community Center.'}
+  
+  
   ];
   const loadFonts = async () => {
     await Font.loadAsync({

@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { View, Text, Image, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, Image, StyleSheet, ScrollView, Linking } from 'react-native';
 import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
@@ -14,6 +14,9 @@ const Picnics = ({navigation}) => {
   useEffect(() => {
     loadFonts();
   }, []);
+  const handlePicnicLocation = () => {
+    Linking.openURL('https://www.google.com/maps/place/Burns+Park+Warming+Hut/@42.2664407,-83.7273434,15z/data=!4m2!3m1!1s0x0:0x1f86bb587ae224f5?sa=X&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhZEAA&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhdEAc')
+  }
   return (
     <View style={styles.container}>
         <ScrollView>
@@ -27,6 +30,8 @@ const Picnics = ({navigation}) => {
    </Text>
     
     <Text style= {styles.normalText }><Text style={styles.boldText}>Reminder: </Text> The Newberry Building will be closed on picnic days. </Text>
+    <Text style= {styles.locationText }  onPress={handlePicnicLocation}><Text style={styles.boldText}> Location: </Text > Burns Park Warming Hut,Wells St, Ann Arbor, MI 48104 </Text>
+
 
     </View>
     </ScrollView>
@@ -67,6 +72,17 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     color: '#313131',
     marginBottom: '7%'
+  },
+  locationText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHItalic',
+    fontSize: 16,
+    textAlign: 'justify',
+    marginBottom: '10%',
+    color: '#115BFB',
+
+
+
   },
   normalText: {
     alignSelf: 'flex-start',

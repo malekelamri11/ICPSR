@@ -132,10 +132,10 @@ const HomeScreen = ({navigation}) => {
       <Carousel
       
     //   data = {['Summer festival', 'Juneteenth', 'Eid-al-Adha','First picnic', 'Art fair', 'Second picnic']}
-    data = {[{ id: '1', name: 'Summer festival', date: 'June 9 - June 26', url:'https://www.a2sf.org/', location:'210 Huronview Blvd, Suite 1, Ann Arbor, MI 48103', location2: '', img:'./assets/events/summerFest.png', description:'This three-week festival beginning in June celebrates the best in theatre,  dance, music, and comedy. Performances cater to audiences of all ages. '   },
-    { id: '2', name: 'Juneteenth symposium', date: 'June 15 - June 16', url:'https://www.eventbrite.com/e/2023-juneteenth-freedom-day-celebration-university-of-michigan-tickets-631752507757',  location:'Michigan League 911 North University Avenue Ann Arbor, MI 48109', location2:'', img:'./assets/events/juneteenth.png', description: 'The University of Michigan will celebrate the 3rd Annual Juneteenth Symposium. The theme of this year’s event is Systems Check: Exploring Structural Solutions to Systemic Racism.' },    
-    { id: '3', name: 'First picnic', date: 'July 1, 2023', url:'#', location:'location', location2:'', img:'./assets/events/summerFest.png', description: 'description' },    
-    { id: '4', name: 'Second picnic', date: 'July 29, 2023', location:'location', location2:'', url:'#', img:'./assets/events/summerFest.png', description: 'description' }]}
+    data = {[{ id: '1', name: 'Coffee and donuts', date: 'Wendesdays mornings', url:'#', location:'location', location2: '', img:'./assets/events/summerFest.png', description: 'description'   },
+    { id: '2', name: 'Tidy tuesdays lunch meetup', date: 'Tuesdays noon', url:'#',  location:'location', location2:'', img:'./assets/events/juneteenth.png', description: 'description' },    
+    { id: '3', name: 'Picnics', date: 'July 1 and July 29', url:'#', location:'location', location2:'', img:'./assets/events/summerFest.png', description: 'description' },    
+    { id: '4', name: 'Pride', date: 'August 29, 2023', location:'location', location2:'', url:'#', img:'./assets/events/summerFest.png', description: 'description' }]}
       renderItem={renderSecondSliderItem}
       sliderWidth={400}
       itemWidth={200}
