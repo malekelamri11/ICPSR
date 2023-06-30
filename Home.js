@@ -290,7 +290,7 @@ const styles = StyleSheet.create({
     marginRight: 'auto',
   },
   seeAllText: {
-    color: 'blue',
+    color: '#115BFB',
     fontSize: 16,
     fontFamily: 'AHItalic'
   },

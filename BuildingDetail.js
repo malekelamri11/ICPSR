@@ -1,9 +1,20 @@
-import React from 'react';
+ import React, {useEffect} from 'react';
 import { View, Text, StyleSheet, Image } from 'react-native';
 import BottomNavigation from './BottomNavigation';
+import * as Font from 'expo-font'
 
 const BuildingDetails = ({route, navigation}) => {
     const {acronym, location, name} = route.params;
+    const loadFonts = async () => {
+      await Font.loadAsync({
+        'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
+        'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
+        'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
+        'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
+      });}
+      useEffect(() => {
+        loadFonts();
+      }, []);
     
   return (
     <View style={styles.container}>
@@ -27,16 +38,16 @@ const styles = StyleSheet.create({
   },
   logo: {
     
-    marginTop: '8%',
-    width: '70%',
-    height: '7%',
+    marginTop: '10%',
+    width: 240,
+    height: 50,
     marginBottom: '15%',
   },
   heading: {
     alignSelf: 'flex-start',
     color: '#313131',
     fontSize: 24,
-    fontWeight: 700,
+    fontFamily: 'AHBold',
     marginBottom: '10%',
     paddingHorizontal:'10%',
   },
@@ -49,6 +60,8 @@ const styles = StyleSheet.create({
   },
   normalText: {
     alignSelf: 'flex-start',
+    fontFamily: 'AHRegular',
+
     paddingHorizontal: '10%',
     marginBottom: '1%',
   },

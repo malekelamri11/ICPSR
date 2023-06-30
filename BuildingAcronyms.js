@@ -32,24 +32,7 @@ const BuildingAcronyms = ({navigation}) => {
   const [data2, setData2] = useState([])
   const [items, setItems] = useState([]);
   const [excelData, setExcelData] = useState([]);
-//   const processExcelData = () => {
-//   // Assuming your JSON data has 'acronym', 'name', and 'location' fields
-//   const items = dataa.map(({ acronym, name, location }) => ({ acronym, name, location }));
-//   setItems(items);
-// };
-// useEffect(() => {
-//   processExcelData();
-//   console.log(items)
-// }, []);
 
-  // useEffect(() => {
-  //   const fetchDataAsync = async () => {
-  //     const result = await fetchData();
-  //     setData(result);
-  //   };
-
-  //   fetchDataAsync();
-  // }, []);
   useEffect(() => {
     fetchData();
   }, []);
@@ -64,7 +47,7 @@ const BuildingAcronyms = ({navigation}) => {
   };
   const [selectedBuilding, setSelectedBuilding] = useState('');
   const handleNextPress = () => {
-    const selectedItem = data2.find(item => item.Acronym === selectedBuilding);
+    const selectedItem = data2.find(item => item.Id === selectedBuilding);
     console.log(selectedItem)
     
     if (selectedItem) {
@@ -94,9 +77,9 @@ const BuildingAcronyms = ({navigation}) => {
         <Picker.Item label="Select a building..." value="" />
         {data2.map((item) => (
           <Picker.Item
-            key={item.acronym}
+            key={item.Id}
             label={item.Acronym}
-            value={item.Acronym}
+            value={item.Id}
             style = {styles.pickerItem}
             
           />

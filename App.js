@@ -22,6 +22,10 @@ import UniversityAcronyms from './Resources/UniversityAcronyms';
 import BuildingAcronyms from './BuildingAcronyms';
 import BuildingDetails from './BuildingDetail';
 import CourseDetails from './CourseDetails';
+import Offices from './Offices';
+import Preparation from './Preparation' ;
+import InstructorDetails from './InstructorDetails';
+import Welcome from './Welcome';
 import Picnics from './Picnics';
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
@@ -33,6 +37,9 @@ LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
 
 export default function App() {
+  
+useEffect(() => {
+   }, []);
   return (
     
     <NavigationContainer>
@@ -52,6 +59,18 @@ export default function App() {
       component={Announcements}
       options={{title:'Back'}}
       />
+
+      <Stack.Screen
+      name = "WelcomeToProgram"
+      component={Welcome}
+      options={{title:'Back'}}
+      />
+      <Stack.Screen
+      name = "Preparation"
+      component={Preparation}
+      options={{title:'Back'}}
+      />
+
       <Stack.Screen
       name = "BuildingsAcronyms"
       component={BuildingAcronyms}
@@ -72,6 +91,17 @@ export default function App() {
       component={Classes}
       options={{title:'Back'}}
       />
+    <Stack.Screen
+      name = "Offices"
+      component={Offices}
+      options={{title:'Back'}}
+      />
+      <Stack.Screen
+      name = "InstructorDetails"
+      component={InstructorDetails}
+      options={{title:'Back'}}
+      />  
+
       <Stack.Screen
       name = "Picnics"
       component={Picnics}
@@ -154,17 +184,15 @@ export default function App() {
 
 const WelcomeScreen = ({navigation}) => {
   const loadFonts = async () => {
-  await Font.loadAsync({
-    AHBold:require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    AHBoldItalic:require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    AHItalic:require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    AHRegular:require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });
-  console.log('fonts loaded')
-};
-useEffect(() => {
-    loadFonts();
-  }, []);
+    await Font.loadAsync({
+      'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
+      'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
+      'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
+      'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
+    });}
+    useEffect(() => {
+      loadFonts();
+    }, []);
   const handleContinue = () => {
     navigation.navigate('Home')
   }

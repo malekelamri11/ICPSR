@@ -27,6 +27,7 @@ const Picnics = ({navigation}) => {
    </Text>
     
     <Text style= {styles.normalText }><Text style={styles.boldText}>Reminder: </Text> The Newberry Building will be closed on picnic days. </Text>
+
     </View>
     </ScrollView>
     <BottomNavigation navigation={navigation}/>

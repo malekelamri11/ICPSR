@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
 import { View, Text, StyleSheet, Image, ScrollView, TouchableOpacity, Linking } from 'react-native';
-
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
@@ -39,15 +38,20 @@ const Announcements = ({navigation}) => {
         <View style= {styles.scroll}>
       <Text style={styles.title}>Important Announcements</Text>
       <View style={styles.squareContainer}>
+        <TouchableOpacity style={{ width : '95%'}} onPress={handleWelcome}> 
         <View style={styles.square}>
             <Text style={styles.squareText}>Welcome to ICPSR summer program</Text>
         </View>
+        </TouchableOpacity>
+        <TouchableOpacity style={{ width : '95%'}} onPress={handlePreparation}>
         <View style={styles.square}>
             <Text style={styles.squareText}>Preparation</Text>
             
         </View>
+        </TouchableOpacity>
+
         <View style={styles.square}>
-            <Text style={styles.squareText}>3-Week Courses Second Session starts today!</Text>
+            <Text style={styles.squareText}>3-Week courses second session starts today!</Text>
             <Text style={styles.squareTextSmall}> Have a great first day!!</Text>
         </View>
 

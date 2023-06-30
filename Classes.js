@@ -18,6 +18,7 @@ const Classes = ({navigation}) => {
         navigation.navigate('Search')
     }
     const handleInstructorPress = () => {
+      navigation.navigate('Offices')
 
     }
   return (
@@ -29,11 +30,11 @@ const Classes = ({navigation}) => {
       <Text style={styles.title}>Class Schedule</Text>
       <Image source={require('./assets/Class.png')} style={styles.image} resizeMode="contain" />
       <Text style={styles.text}>You are not registered for classes {'\n'} in the summer term.</Text>
-      <TouchableOpacity style={styles.button} onPress={handleClassPress}>
+      <TouchableOpacity style={styles.button1} onPress={handleClassPress}>
         <Text style={styles.buttonText}>Search for{'\n'}Classes</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={handleInstructorPress}>
-        <Text style={styles.buttonText}>Search for{'\n'}Instructors Offices</Text>
+      <TouchableOpacity style={styles.button2} onPress={handleInstructorPress}>
+        <Text style={styles.buttonText}>Search for{'\n'}instructors offices</Text>
       </TouchableOpacity>
       </View>
       </ScrollView>
@@ -79,22 +80,34 @@ const styles = StyleSheet.create({
     paddingRight: '15%',
 
   },
-  button: {
-    alignSelf : 'flex-end',
-    width : '47%',
-    backgroundColor: '#115BFB',
-    borderRadius: 20,
-    marginRight: '8%',
-    marginTop: '10%',
-    paddingVertical: '4%',
-    paddingHorizontal: '3%',
-  },
+  
+  button1: {
+      alignSelf : 'flex-end',
+      width : '47%',
+      backgroundColor: '#115BFB',
+      borderRadius: 20,
+      marginRight: '8%',
+      marginTop: '10%',
+      marginTop: '8%',
+      paddingVertical: '4%',
+      paddingHorizontal: '3%',
+    },
+  button2: {
+      alignSelf : 'flex-end',
+      width : '47%',
+      backgroundColor: '#115BFB',
+      borderRadius: 20,
+      marginRight: '8%',
+      marginTop: '5%',
+      paddingVertical: '4%',
+      paddingHorizontal: '3%',
+    },
   buttonText: {
-    color: 'white',
-    fontSize: 16,    
-    textAlign: 'center',
-    fontWeight: 600,
-  },
-});
-
-export default Classes;
+      color: 'white',
+      fontSize: 16,    
+      textAlign: 'center',
+      fontWeight: 600,
+    },
+  
+  });
+  export default Classes;
