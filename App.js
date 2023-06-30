@@ -28,6 +28,8 @@ import InstructorDetails from './InstructorDetails';
 import Welcome from './Welcome';
 import Picnics from './Picnics';
 import Coffee from './Coffee'
+import Lunch from './Lunch'
+import Blacklock from './Blacklock'
  
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
@@ -107,6 +109,17 @@ useEffect(() => {
       <Stack.Screen
       name = "Picnics"
       component={Picnics}
+      options={{title:'Back'}}
+      />
+
+      <Stack.Screen
+      name = "Blacklock"
+      component={Blacklock}
+      options={{title:'Back'}}
+      />
+      <Stack.Screen
+      name = "Lunch"
+      component={Lunch}
       options={{title:'Back'}}
       />
 

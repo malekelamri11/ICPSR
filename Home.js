@@ -45,6 +45,13 @@ const HomeScreen = ({navigation}) => {
     const handlePicnics = () => {
       navigation.navigate('Picnics')
     }
+    const handleBlacklock = () => {
+      navigation.navigate('Blacklock')
+    }
+
+    const handleLunch = () => {
+      navigation.navigate('Lunch')
+    }
     const handleCoffee = () => {
       navigation.navigate('Coffee')
     }
@@ -78,7 +85,7 @@ const HomeScreen = ({navigation}) => {
         navigation.navigate('SummerFest', {data} )
       }
         return (
-          <TouchableOpacity onPress={item.id === '1'   ? handleCoffee: handleEventPress && item.id === '3'   ? handlePicnics: handleEventPress }  >
+          <TouchableOpacity onPress={item.id === '1'   ? handleCoffee: handleEventPress && item.id === '2'   ? handleLunch: handleEventPress  && item.id === '3'   ? handlePicnics: handleEventPress && item.id === '4'   ? handleBlacklock: handleEventPress  }  >
                           
             <View style={styles.sliderItemTwo}>              
                 <Text style={styles.sliderText}>{item.name}</Text>
@@ -142,7 +149,7 @@ const HomeScreen = ({navigation}) => {
     data = {[{ id: '1', name: 'Coffee and donuts', date: 'Wendesdays mornings', url:'#', location:'location', location2: '', img:'./assets/events/summerFest.png', description: 'description'   },
     { id: '2', name: 'Tidy tuesdays lunch meetup', date: 'Tuesdays noon', url:'#',  location:'location', location2:'', img:'./assets/events/juneteenth.png', description: 'description' },    
     { id: '3', name: 'Picnics', date: 'July 1 and July 29', url:'#', location:'location', location2:'', img:'./assets/events/summerFest.png', description: 'description' },    
-    { id: '4', name: 'Pride', date: 'August 5, 2023', location:'Downtown Ann Arbor', location2:'', url:'https://www.annarbor.org/event/ann-arbor-pride/12008/', img:'./assets/events/pride.png', description: 'Ann Arbor Pride is a weekend festival in Ann Arbor, Michigan, celebrating lesbian, gay, bisexual, transgender, queer identities, community, and allyship hosted by the Jim Toy Community Center.' }]}
+    { id: '4', name: 'Blacklock', date: 'July 3 - July 9', location:'', location2:'', url:'', img:'', description: ' ' }]}
       renderItem={renderSecondSliderItem}
       sliderWidth={400}
       itemWidth={200}
