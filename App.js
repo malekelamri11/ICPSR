@@ -39,6 +39,8 @@ const Stack = createNativeStackNavigator();
 LogBox.ignoreLogs(['ViewPropTypes will be removed']);
 LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
+LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
+
 
 export default function App() {
   
@@ -205,8 +207,8 @@ useEffect(() => {
 }
 
 const WelcomeScreen = ({navigation}) => {
-  const loadFonts = async () => {
-    await Font.loadAsync({
+     const loadFonts = async () => {
+  await Font.loadAsync({
       'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
       'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
       'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
@@ -274,7 +276,6 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 64,
     fontWeight: 400,
-    fontFamily: 'AHBold',
     marginBottom : '30%',
     marginTop: '25%',
     fontSize: 20,
@@ -306,7 +307,7 @@ const styles = StyleSheet.create({
     color: 'white', 
     fontSize: 32, 
     fontWeight: 400,
-    fontFamily: 'AHBold'
+   
     
   },
 });

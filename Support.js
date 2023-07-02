@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Linking } from 'react-native';
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
@@ -15,6 +15,32 @@ const SupportScreen = ({navigation}) => {
     loadFonts();
   }, []);
 
+  const handleTechSupp = () => {
+    Linking.openURL('mailto:icpsr-sptechsupp@umich.edu')
+  }
+
+  const handleRegistration = () => {
+    Linking.openURL('mailto:sumprogram@icpsr.umich.edu')
+  }
+
+  const handle911 = () => {
+    Linking.openURL(`tel:${911}`)
+
+  }
+
+  const handleonCampusDPSS = () => {
+    Linking.openURL(`tel:${7347631131}`)
+
+  }
+  const handleUnvierstiyHealthServices = () => {
+    Linking.openURL(`tel:${7347648320}`)
+
+  }
+
+  const handleUManonymous = () => {
+    Linking.openURL(`tel:${8008631355}`)
+
+  }
   return (
     <View style={styles.container}>
       <Image
@@ -22,19 +48,20 @@ const SupportScreen = ({navigation}) => {
         style={styles.logo}
       />
       <Text style={styles.text}>Support</Text>
-      <Text style={styles.texthere}>{'\u2022'}   Computing support: <Text style={styles.underlined}> icpsr-sptechsupp@umich.edu</Text>  </Text>
+      <Text style={styles.texthere}>{'\u2022'}   Computing support: <Text style={styles.underlined} onPress={handleTechSupp}  > icpsr-sptechsupp@umich.edu</Text>  </Text>
       
-      <Text style={styles.texthere}>{'\u2022'}    Registration questions (add/drop, withdrawal, etc.): <Text style={styles.underlined}>sumprog@icpsr.umich.edu </Text></Text>
+      <Text style={styles.texthere}>{'\u2022'}    Registration questions (add/drop, withdrawal, etc.): <Text style={styles.underlined} onPress={handleRegistration}>sumprog@icpsr.umich.edu </Text></Text>
       <Text style={styles.textEm}>Emergency numbers</Text>
-      <Text style={styles.texthere}> Call 911</Text>
+      <Text style={styles.texthere}  onPress={handle911}> Call 911</Text>
+      
       <View style= {styles.seperator}></View>
-      <Text style={styles.texthere}> On Campus U-M DPSS</Text>
+      <Text style={styles.texthere} onPress={handleonCampusDPSS}> On Campus U-M DPSS</Text>
       <Text style={styles.phone}>+1 (734) 763-1131</Text>
       <View style= {styles.seperator}></View>
-      <Text style={styles.texthere}> University Health Services</Text>
+      <Text style={styles.texthere} onPress={handleUnvierstiyHealthServices}> University Health Services</Text>
       <Text style={styles.phone}>+1 (734) 764-8320</Text>
       <View style= {styles.seperator}></View>
-      <Text style={styles.texthere}> U-M’s Anonymous Tip Line</Text>
+      <Text style={styles.texthere}onPress={handleUManonymous}> U-M’s Anonymous Tip Line</Text>
       <Text style={styles.phone}>+1 (800) 863-1355</Text>
       <BottomNavigation navigation={navigation}/>
     </View>
