@@ -3,11 +3,6 @@ import { View, Text, Image, StyleSheet,TouchableOpacity, ScrollView } from 'reac
 import { Picker } from '@react-native-picker/picker';
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
-
-// import { fetchData } from './DataService';
-
-
-
 const BuildingAcronyms = ({navigation}) => {
   const loadFonts = async () => {
   await Font.loadAsync({
@@ -49,7 +44,6 @@ const BuildingAcronyms = ({navigation}) => {
   const handleNextPress = () => {
     const selectedItem = data2.find(item => item.Id === selectedBuilding);
     console.log(selectedItem)
-    
     if (selectedItem) {
       navigation.navigate('BuildingDetails', {
         acronym: selectedItem.Acronym,
