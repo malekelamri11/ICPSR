@@ -28,37 +28,58 @@ const Announcements = ({navigation}) => {
   const handleWelcome = () => {
     navigation.navigate('WelcomeToProgram')
   }
+  const handleCertificates = () => {
+    navigation.navigate('Certificates')
+  }
   const handlePreparation = () => {
     navigation.navigate('Preparation')
+  }
+  const handleCanvasAccess = () => {
+    navigation.navigate('CanvasAccess')
   }
   return (
     <View style={styles.container}>
       <Logo />
       <ScrollView>
-        <View style= {styles.scroll}>
-      <Text style={styles.title}>Important Announcements</Text>
+      <View style= {styles.scroll}>
+          <Text style={styles.title}>Important Announcements</Text>
       <View style={styles.squareContainer}>
+    
         <TouchableOpacity style={{ width : '95%'}} onPress={handleWelcome}> 
         <View style={styles.square}>
-            <Text style={styles.squareText}>Welcome to ICPSR summer program</Text>
+            <Text style={styles.squareText}>3-Week courses second session starts today!</Text>
+            <Text style={styles.squareTextSmall}>Welcome to ICPSR summer program!</Text>
         </View>
         </TouchableOpacity>
+        
         <TouchableOpacity style={{ width : '95%'}} onPress={handlePreparation}>
         <View style={styles.square}>
             <Text style={styles.squareText}>Preparation</Text>
+        </View>
+        </TouchableOpacity>
+        
+        <TouchableOpacity style={{ width : '95%'}} onPress={handleCanvasAccess}>
+        <View style={styles.square}>
+            <Text style={styles.squareText}>Add and drop is due</Text>
+        </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={{ width : '95%'}} onPress={handleCertificates}>
+        <View style={styles.square}>
+            <Text style={styles.squareText}>Certificates</Text>
             
         </View>
         </TouchableOpacity>
 
         <View style={styles.square}>
-            <Text style={styles.squareText}>3-Week courses second session starts today!</Text>
-            <Text style={styles.squareTextSmall}> Have a great first day!!</Text>
+            <Text style={styles.squareText}>T-Shirt Design Contest</Text>
+            <TouchableOpacity onPress={handleLinkPress}>
+            </TouchableOpacity>
         </View>
 
         <View style={styles.square}>
-            <Text style={styles.squareText}>Purchasing textbooks</Text>
+            <Text style={styles.squareText}>Send in your pictures and memories!</Text>
             <TouchableOpacity onPress={handleLinkPress}>
-            <Text style={styles.squareTextSmall}> If you still need a required textbook please follow the instructions:</Text>
             </TouchableOpacity>
         </View>
         

@@ -1,155 +1,186 @@
 [
  {
   "Course": "Advanced Empirical Modeling of Social Science Theory",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "SKB 2140",
-  "Instructor": "Rob Franzese"
+  "Instructor": "Rob Franzese",
+  "url": "https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7389405,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
  {
   "Course": "Bayesian Modeling for the Social Sciences II: Advanced Topics",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "NUB 1528",
-  "Instructor": "Marc Ratkovic"
+  "Instructor": "Marc Ratkovic",
+  "url":"https://www.google.com/maps/place/1100+North+University+Building/@42.2776451,-83.7354059,15z/data=!4m2!3m1!1s0x0:0x788a3bab177eec3c?sa=X&ved=2ahUKEwiA3Pfb2_P_AhXjkIkEHS5JDYkQ_BJ6BAhgEAA&ved=2ahUKEwiA3Pfb2_P_AhXjkIkEHS5JDYkQ_BJ6BAhmEAg"
  },
  {
   "Course": "Categorical Data Analysis: Models for Categorical, Ordinal, and Count Outcomes",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "SKB 3600",
-  "Instructor": "Olga Chyzh and Dr. Mark Nieman"
+  "Instructor": "Olga Chyzh and Dr. Mark Nieman",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
 
  {
   "Course": "Caustal Inference for Social Sciences II",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "CCCB 3420",
-  "Instructor": "Sebastian Calonico and Dr. Gonzalo Vazquez-Bare"
+  "Instructor": "Sebastian Calonico and Dr. Gonzalo Vazquez-Bare",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu"
+
  },
  
  {
   "Course": "Data Science and Text Analysis",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "CCCB 3420",
-  "Instructor": "Jared Edgerton, Dr. Kelsey Shoub and Dr. Caleb Pomeroy"
+  "Instructor": "Jared Edgerton, Dr. Kelsey Shoub and Dr. Caleb Pomeroy",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu"
+
  },
 
  {
   "Course": "Game Theory",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "SKB 2060",
-  "Instructor": "John Patty"
+  "Instructor": "John Patty",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
  {
   "Course": "Maximum Likelihood Estimation II: Advanced Topics",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "SKB 2140",
-  "Instructor": "Desmond Wallace"
+  "Instructor": "Desmond Wallace",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
  {
   "Course": "Multilevel Models II: Advanced Topics",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "CCCB 3460",
-  "Instructor": "John Poe"
+  "Instructor": "John Poe",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu"
+
  },
  {
   "Course": "Network Analysis II: Advanced Topics",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "SKB 3600",
-  "Instructor": "Shahryar Minhas and Dr. Olga Chyzh"
+  "Instructor": "Shahryar Minhas and Dr. Olga Chyzh",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
  
  {
   "Course": "Panel Data and Longitudinal Analysis",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "CCCB 3460",
-  "Instructor": "Mark Pickup and Dr. Andy Philips"
+  "Instructor": "Mark Pickup and Dr. Andy Philips",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu"
+
  },
 
  {
   "Course": "Race, Ethnicity, and Quantitative Methodology II",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "10:00 am - 1:00 pm",
   "Location": "SKB 2200",
-  "Instructor": "Kenicia Wright"
+  "Instructor": "Kenicia Wright",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
  {
   "Course": "Regression Analysis II: Linear Models",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "EHB 844",
-  "Instructor": "Robert Cooper"
+  "Instructor": "Robert Cooper",
+  "url":"https://www.google.com/maps/place/1100+North+University+Building/@42.2776451,-83.7354059,15z/data=!4m2!3m1!1s0x0:0x788a3bab177eec3c?sa=X&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhdEAA&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhnEAg"
+
  },
  {
   "Course": "Social Choice Theory",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "SKB 2050",
-  "Instructor": "Maggie Penn"
+  "Instructor": "Maggie Penn",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
+  
  },
  {
   "Course": "Statistics and Data Analysis II: The Basics of Regression",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "LSA 3254",
-  "Instructor": "Shane Singh"
+  "Instructor": "Shane Singh",
+  "url":"https://www.google.com/maps/place/University+of+Michigan+College+of+Literature,+Science,+and+the+Arts/@42.2761921,-83.7438871,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae475e2750c3:0xcc53a783dd1dab18!8m2!3d42.2761921!4d-83.7413068!16zL20vMDhtaGpk?entry=ttu"
+
+  
  },
  {
   "Course": "Structural Equation Models with Latent Variables",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm - 5:00 pm",
   "Location": "NUB 1528",
-  "Instructor": "Sandy Marquart-Pyatt"
+  "Instructor": "Sandy Marquart-Pyatt",
+  "url":"https://www.google.com/maps/place/1100+North+University+Building/@42.2776451,-83.7354059,15z/data=!4m2!3m1!1s0x0:0x788a3bab177eec3c?sa=X&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhdEAA&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhnEAg"
+
  },
  {
   "Course": "Time Series Analysis II: Advanced Topics",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "2:00 pm- 5:00 pm",
   "Location": "SKB 2200",
-  "Instructor": "Matthew Lebo and Dr. Paul Kellstedt "
+  "Instructor": "Matthew Lebo and Dr. Paul Kellstedt ",
+  "url":"https://www.google.com/maps/place/School+of+Kinesiology+Building,+830+N+University+Ave,+Ann+Arbor,+MI+48109/@42.2780916,-83.7415208,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae40db957963:0x280f1194da18628e!8m2!3d42.2780916!4d-83.7389405!16s%2Fg%2F1tdksgr4?entry=ttu"
  },
 
  {
   "Course": "Introductory Matrix Algebra, Calculus, and Probability Review",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "8:30 am - 10:00 am",
   "Location": "CCCB 3420",
-  "Instructor": "Tim McDaniel"
+  "Instructor": "Tim McDaniel",
+  "url": "https://www.google.com/maps/place/Central+Campus+Classroom+Building/@42.2777056,-83.736868,17z/data=!3m1!4b1!4m6!3m5!1s0x883caf838038550b:0xb9622ef2ebe22a54!8m2!3d42.2777056!4d-83.7342877!16s%2Fg%2F11pttkcq3p?entry=ttu"
+
  },
  {
   "Course": "Introduction to Python",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "6:00 pm - 7:30 pm",
   "Location": "BSB 1060",
-  "Instructor": "Omer Yalcin"
+  "Instructor": "Omer Yalcin",
+  "url": "https://www.google.com/maps/place/Biological+Sciences+Building/@42.2788651,-83.7371026,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae43c58d85ef:0x4f9a4c5bd7ab75ed!8m2!3d42.2788651!4d-83.7345223!16s%2Fg%2F11dxbsrd61?entry=ttu"
  },
  {
   "Course": "Introduction to the LaTeX Text Processing System",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "6:00 pm -8:00 pm",
   "Location": "BSB 1060",
-  "Instructor": "Omer Yalcin"
+  "Instructor": "Omer Yalcin",
+  "url": "https://www.google.com/maps/place/Biological+Sciences+Building/@42.2788651,-83.7371026,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae43c58d85ef:0x4f9a4c5bd7ab75ed!8m2!3d42.2788651!4d-83.7345223!16s%2Fg%2F11dxbsrd61?entry=ttu"
  },
  {
   "Course": "Introduction to the R Statistical Computing Environment",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "7:30 pm - 9:00 pm",
   "Location": "BSB 1060",
-  "Instructor": "Sarah Hunter"
+  "Instructor": "Sarah Hunter",
+  "url": "https://www.google.com/maps/place/Biological+Sciences+Building/@42.2788651,-83.7371026,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae43c58d85ef:0x4f9a4c5bd7ab75ed!8m2!3d42.2788651!4d-83.7345223!16s%2Fg%2F11dxbsrd61?entry=ttu"
  },
  {
   "Course": "Introduction to Computing for Data Analysis",
-  "Day": "Monday-Friday starting July 18 to August 4,",
+  "Day": "Monday-Friday starting July 18 to August 4",
   "Time": "5:00 pm - 6:00 pm",
   "Location": "LSA 1280",
-  "Instructor": "Michael Hawthorne"
+  "Instructor": "Michael Hawthorne",
+  "url":"https://www.google.com/maps/place/University+of+Michigan+College+of+Literature,+Science,+and+the+Arts/@42.2761921,-83.7438871,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae475e2750c3:0xcc53a783dd1dab18!8m2!3d42.2761921!4d-83.7413068!16zL20vMDhtaGpk?entry=ttu"
  }
 ]

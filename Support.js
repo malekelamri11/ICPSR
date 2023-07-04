@@ -108,7 +108,9 @@ const styles = StyleSheet.create({
   },
   underlined : {
     fontFamily: 'AHRegular',
+    color: '#115BFB',
     textDecorationLine: 'underline'
+
   },
   texthere: {
     textAlign : 'left',

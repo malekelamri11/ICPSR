@@ -104,7 +104,7 @@ const HomeScreen = ({navigation}) => {
     { id: '1', title: 'First in-person workshops', subtitle: 'Monday, June 5, 2023' },
     { id: '2', title: 'First 3-week session', subtitle: 'Monday, June 18, 2023' },
     { id: '3', title: 'First picnic', subtitle: 'Saturday, July 1, 2023' },
-    { id: '4', title: 'Intersession workshops, blacklocks and events', subtitle: 'Monday, July 10, 2023' },
+    { id: '4', title: 'Intersession workshops, blalocks and events', subtitle: 'Monday, July 10, 2023' },
     { id: '5', title: 'Second 3-week session', subtitle: 'Monday, July 17, 2023' },
     { id: '6', title: 'Second picnic', subtitle: 'Saturday, July 29, 2023' },
   ];
@@ -149,7 +149,7 @@ const HomeScreen = ({navigation}) => {
     data = {[{ id: '1', name: 'Coffee and donuts', date: 'Wendesdays mornings', url:'#', location:'location', location2: '', img:'./assets/events/summerFest.png', description: 'description'   },
     { id: '2', name: 'Tidy tuesdays lunch meetup', date: 'Tuesdays noon', url:'#',  location:'location', location2:'', img:'./assets/events/juneteenth.png', description: 'description' },    
     { id: '3', name: 'Picnics', date: 'July 1 and July 29', url:'#', location:'location', location2:'', img:'./assets/events/summerFest.png', description: 'description' },    
-    { id: '4', name: 'Blacklock', date: 'July 3 - July 9', location:'', location2:'', url:'', img:'', description: ' ' }]}
+    { id: '4', name: 'Blalock', date: 'July 3 - July 12', location:'', location2:'', url:'', img:'', description: ' ' }]}
       renderItem={renderSecondSliderItem}
       sliderWidth={400}
       itemWidth={200}
@@ -177,7 +177,7 @@ const HomeScreen = ({navigation}) => {
       />
       </View>
       <View style={styles.itineraryContainer}>
-      <Text style={styles.itineraryHeader}>Program itinerary</Text>
+      <Text style={styles.itineraryHeader}>Summer 2023 program itinerary</Text>
       <FlatList
         data={data}
         renderItem={({ item }) => (

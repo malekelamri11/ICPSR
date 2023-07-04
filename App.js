@@ -30,7 +30,8 @@ import Picnics from './Picnics';
 import Coffee from './Coffee'
 import Lunch from './Lunch'
 import Blacklock from './Blacklock'
- 
+import Certificates from './Certificates' 
+import CanvasAccess from './CanvasAccess'
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -77,6 +78,11 @@ useEffect(() => {
       options={{title:'Back'}}
       />
 
+      <Stack.Screen
+      name = "CanvasAccess"
+      component={CanvasAccess}
+      options={{title:'Back'}}
+      />
       <Stack.Screen
       name = "BuildingsAcronyms"
       component={BuildingAcronyms}
@@ -134,6 +140,11 @@ useEffect(() => {
       <Stack.Screen
       name = "Resources"
       component={Resources}
+      options={{title:'Back'}}
+      />
+      <Stack.Screen
+      name = "Certificates"
+      component={Certificates}
       options={{title:'Back'}}
       />
       <Stack.Screen

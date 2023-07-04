@@ -39,11 +39,11 @@ const Preparation = ({navigation}) => {
         We strongly urge you prepare prior to the start date of your workshop.
         </Text>
 
-        <Text style={styles.paragraph} onPress={handle2FA}>{'\u2022'}  Set your your UM Friend Account, password and enroll in for DUO two-factor authentication. (2FA){'\n'}</Text>
-        <Text style={styles.paragraph} onPress={handleCanvasAccount}>{'\u2022'}  Log in to your Canvas account.{'\n'} </Text>
-        <Text style={styles.paragraph} onPress={handleZoom}>{'\u2022'}  Install the Zoom application on your computer.{'\n'}</Text>
-        <Text style={styles.paragraph} onPress={handleSoftware}>{'\u2022'}  Install any additional required software on your computer. (Stata, R, etc.){'\n'} </Text>
-        <Text style={styles.paragraph} onPress={handleHorizon}>{'\u2022'}  Install the VMware Horizon client if your intend to use the Summer Program Virtual Desktop. (optional, consult your instructor)</Text>
+        <Text style={styles.paragraph} >{'\u2022'}  Set your your UM Friend Account, password and enroll in for DUO two-factor authentication using this<Text style={styles.linkText} onPress={handle2FA}> link.</Text>{'\n'}</Text>
+        <Text style={styles.paragraph} >{'\u2022'}  Log in to your Canvas account using this <Text style={styles.linkText} onPress={handleCanvasAccount}>link.</Text> {'\n'}</Text>
+        <Text style={styles.paragraph} >{'\u2022'}  Install the Zoom application on your computer using this <Text style={styles.linkText} onPress={handleZoom}>link.</Text>{'\n'}</Text>
+        <Text style={styles.paragraph} >{'\u2022'}  Install any additional required software on your computer (Stata, R, etc.) using this <Text style={styles.linkText} onPress={handleSoftware}>link.</Text>{'\n'} </Text>
+        <Text style={styles.paragraph} onPress={handleHorizon}>{'\u2022'}  Install the VMware Horizon client if your intend to use the Summer Program Virtual Desktop (optional, consult your instructor) using this <Text style={styles.linkText} onPress={handleHorizon}>link.</Text></Text>
 
       </View>
       </ScrollView>
@@ -76,12 +76,20 @@ const styles = StyleSheet.create({
     marginBottom: '8%',
     color: '#313131'
   },
+  linkText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHRegular',
+    fontSize: 16,
+    textAlign: 'justify',
+    color: '#115BFB',
+    marginBottom: '7%'
+  },
   paragraph: {
     fontSize: 16,
-    fontFamily: 'AHItalic',
+    fontFamily: 'AHRegular',
     textAlign: 'left',
     paddingLeft: '5%',
-    color: '#115BFB',
+    color: '#313131'
   },
 });
 

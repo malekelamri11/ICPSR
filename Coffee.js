@@ -39,8 +39,9 @@ const Coffee = ({navigation}) => {
    </Text>
     
      
-    <Text style= {styles.locationText }  onPress={handleCoffeeLocation}><Text style={styles.boldText}> Location: </Text > Newberry lounge area </Text>
-
+   < Text style={styles.boldText}>
+        {'\n'}Location:<Text style={styles.linkText}  onPress={handleCoffeeLocation}> Helen Newberry lounge area </Text>
+    </Text>
 
     </View>
     </ScrollView>
@@ -81,6 +82,14 @@ const styles = StyleSheet.create({
     textAlign: 'justify',
     color: '#313131',
     marginBottom: '7%'
+  },
+  linkText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHRegular',
+    fontSize: 16,
+    textAlign: 'justify',
+    marginBottom: '10%',
+    color: '#115BFB',
   },
   locationText: {
     alignSelf: 'flex-start',

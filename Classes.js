@@ -26,7 +26,6 @@ const Classes = ({navigation}) => {
       <ScrollView>
         <View style={styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
-      
       <Text style={styles.title}>Class Schedule</Text>
       <Image source={require('./assets/Class.png')} style={styles.image} resizeMode="contain" />
       <Text style={styles.text}>You are not registered for classes {'\n'} in the summer term.</Text>

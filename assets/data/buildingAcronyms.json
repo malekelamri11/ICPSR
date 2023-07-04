@@ -54,5 +54,20 @@
   "Location": "500 Church St",
   "url":"https://www.google.com/maps/place/Weiser+Hall/@42.2768016,-83.7376991,17z/data=!3m2!4b1!5s0x883cae440f7f3517:0x6ca424771d19d890!4m6!3m5!1s0x883cae440f1061fd:0xf3c43cc4fee3ad8b!8m2!3d42.2768016!4d-83.7351188!16s%2Fg%2F12vrq6hw9?entry=ttu",
   "Id": 8
- }
+ },
+ {
+    "Acronym": "NUB",
+    "Name": "North University Building",
+    "Location": "1100 North University Building",
+    "url":"https://www.google.com/maps/place/1100+North+University+Building/@42.2776451,-83.7354059,15z/data=!4m2!3m1!1s0x0:0x788a3bab177eec3c?sa=X&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhdEAA&ved=2ahUKEwirv_TcrfX_AhWikIkEHaSIAv0Q_BJ6BAhnEAg",
+    "Id": 9
+   },
+   {
+    "Acronym": "EHB",
+    "Name": "NA",
+    "Location": "NA",
+    "url":"https://www.google.com/maps/place/Weiser+Hall/@42.2768016,-83.7376991,17z/data=!3m2!4b1!5s0x883cae440f7f3517:0x6ca424771d19d890!4m6!3m5!1s0x883cae440f1061fd:0xf3c43cc4fee3ad8b!8m2!3d42.2768016!4d-83.7351188!16s%2Fg%2F12vrq6hw9?entry=ttu",
+    "Id": 10
+   }
+ 
 ]

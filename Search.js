@@ -38,7 +38,8 @@ const SearchScreen = ({navigation}) => {
         day: selectedItem.Day,
         location: selectedItem.Location,
         time: selectedItem.Time,
-        instructor: selectedItem.Instructor
+        instructor: selectedItem.Instructor,
+        url: selectedItem.url,
       });
     }
     // Handle the "Next" button press
