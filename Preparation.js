@@ -36,13 +36,12 @@ const Preparation = ({navigation}) => {
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       <Text style={styles.heading}>Preparation</Text>
       <Text style= {{marginBottom:'5%', fontSize: 16, fontFamily: 'AHRegular', textAlign: 'justify',}}>
-        We strongly urge you prepare prior to the start date of your workshop.
+        We strongly<Text style={styles.linkText} onPress={handleSoftware}>link. urge you prepare prior to the start date of your workshop.
         </Text>
-
         <Text style={styles.paragraph} >{'\u2022'}  Set your your UM Friend Account, password and enroll in for DUO two-factor authentication using this<Text style={styles.linkText} onPress={handle2FA}> link.</Text>{'\n'}</Text>
         <Text style={styles.paragraph} >{'\u2022'}  Log in to your Canvas account using this <Text style={styles.linkText} onPress={handleCanvasAccount}>link.</Text> {'\n'}</Text>
         <Text style={styles.paragraph} >{'\u2022'}  Install the Zoom application on your computer using this <Text style={styles.linkText} onPress={handleZoom}>link.</Text>{'\n'}</Text>
-        <Text style={styles.paragraph} >{'\u2022'}  Install any additional required software on your computer (Stata, R, etc.) using this <Text style={styles.linkText} onPress={handleSoftware}>link.</Text>{'\n'} </Text>
+        <Text style={styles.paragraph} >{'\u2022'}  Install any additional required software on your computer (Stata, R, etc.) using this </Text>{'\n'} </Text>
         <Text style={styles.paragraph} onPress={handleHorizon}>{'\u2022'}  Install the VMware Horizon client if your intend to use the Summer Program Virtual Desktop (optional, consult your instructor) using this <Text style={styles.linkText} onPress={handleHorizon}>link.</Text></Text>
 
       </View>
