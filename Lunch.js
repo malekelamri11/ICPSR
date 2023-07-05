@@ -23,15 +23,13 @@ const Lunch = ({navigation}) => {
             <View style= {styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       <Text style={styles.heading}>Tidy Tuesdays Lunch Meetup</Text>
-      <Text style={styles.paragraph}>
-      Every Tuesday from noon-1:00 pm EST, the R4DS team posts a raw dataset, a chart or article related to that dataset, and invites interested R users from around the globe to explore the data. The goal of TidyTuesday is to apply your R skills, get feedback, explore other’s work, and connect with the greater #RStats community! As such we encourage everyone of all skills to participate!
+      <Text style={styles.paragraph}>Every Tuesday from noon-1:00 pm EST, the R4DS team posts a raw dataset, a chart or article related to that dataset, and invites interested R users from around the globe to explore the data. The goal of TidyTuesday is to apply your R skills, get feedback, explore other’s work, and connect with the greater #RStats community! As such we encourage everyone of all skills to participate!
       </Text>
       <Text style= {styles.normalText}>{'\u2022'} How to participate in-person:
       <Text style={styles.paragraph}>
      {'\n'}All in-person participants, instructors, and TAs are invited to stop by the back lounge in the Newberry Building on Wednesday mornings for free coffee and donuts.
       </Text> 
    </Text>
-
    <Text style= {styles.normalText}>{'\u2022'} How to participate virtually: 
       <Text style={styles.paragraph}>
      {'\n'}Virtual participants can join the #coffeechats channel on the Summer Program Slack forum; channel members will be randomly paired on a weekly basis for virtual coffee. Participants in the #coffeechats channel can arrange to meet via Zoom during the scheduled coffee & donuts times listed above, or you can coordinate a different day and time that suits both your schedules.
@@ -39,7 +37,7 @@ const Lunch = ({navigation}) => {
    </Text>
     
     < Text style={styles.boldText}>
-        {'\n'}Location:<Text style={styles.linkText}  onPress={handleLunchLocation}> Helen Newberry lounge area </Text>
+         Location:<Text style={styles.linkText}  onPress={handleLunchLocation}> Helen Newberry lounge area </Text>
     </Text>
 
     </View>

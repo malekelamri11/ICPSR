@@ -4,10 +4,10 @@
     "slug": "ICPSR_SUMMER_2023",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/transparent-logo.png",
+    "icon": "./assets/white-logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/transparent-logo.png",
+      "image": "./assets/logo.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

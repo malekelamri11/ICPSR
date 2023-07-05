@@ -53,8 +53,11 @@ const Offices = ({navigation}) => {
       <ScrollView>
       <View style={styles.scroll}>
         <Image source={require('./assets/logo.png')} style={styles.logo} />
-      <Text style={styles.text}>Instructors office</Text>
-      <Text style={styles.subtitle}> What instructor office you are looking for? </Text>
+        <Text style={styles.title}>Instructors office</Text>
+      <Text style={styles.text}>What instructor office you are looking for?</Text>
+
+     
+
       <View style={styles.pickerContainer}>
       <Picker
         
@@ -93,28 +96,35 @@ const Offices = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    
   },
   logo: {
     marginTop: '10%',
-    width: 242 ,
-    height: 40,
-    marginBottom: '20%',
+    width: 240,
+    height: 50,
+    marginBottom: '15%',
   },
   scroll: {
     alignItems: 'center',
     marginBottom: '50%'
   },
   text: {
+    fontSize: 16,
+    paddingHorizontal: '7%',
+    fontFamily: 'AHRegular',
+    alignSelf: 'flex-start',
+    marginBottom: '10%'
+  },
+
+  title: {
     fontSize: 24,
     fontWeight: '400',
-  },
-  text: {
-    fontSize: 24,
     fontFamily: 'AHBold',
+    paddingHorizontal: '7%',
     marginBottom: '5%',
     alignSelf: 'flex-start'
   },
+  
   subtitle: {
     alignSelf: 'flex-start',
     fontSize: 16,

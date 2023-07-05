@@ -3,7 +3,7 @@ import { View, Text, Image, StyleSheet, ScrollView, Linking } from 'react-native
 import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
-const Certificates = ({navigation}) => {
+const Pictures = ({navigation}) => {
     const loadFonts = async () => {
   await Font.loadAsync({
     'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -14,31 +14,36 @@ const Certificates = ({navigation}) => {
   useEffect(() => {
     loadFonts();
   }, []);
-  const handleGradeForm = () => {
-    Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSdD-oLpbK1mtStPsGUUIECHg9C3gfFkcckkyxz3HQCpoAu1Uw/viewform')
+  const handleProgramScapbook = () => {
+    Linking.openURL('https://www.youtube.com/watch?v=bWBkUAvUrs8')
   }
-
+  const handleFormSubmit = () => {
+    Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSf-O3i5bOLglnuLsVbwOOc1dfF82jz2Qky50d7LICxbvlhHDw/viewform')
+  }
   return (
     <View style={styles.container}>
         <ScrollView>
             <View style= {styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
-      <Text style={styles.heading}>Grade letter memorandum and EITM certificates</Text> 
-       <Text style={styles.paragraph}>
-       If you are interested in a grade letter memorandum and/or EITM certification, please use <Text style={styles.linkText}  onPress={handleGradeForm}>this form</Text> to indicate which Courses you took for a grade and which you would like a memorandum for.
-      Grade letter memorandums will be sent in September, and EITM certification will come later in the year, directly from EITM.
-      We will automatically generate a participation certificate that lists all of the Courses and Lectures you registered for.     
-     </Text>
+      <Text style={styles.heading}>Send in your pictures and memories!</Text>
+        <Text style={styles.paragraph}>
+        For the past couple of years, we've put together a <Text style={styles.linkText}  onPress={handleProgramScapbook}>Summer Program scrapbook</Text> containing pictures, memories, tweets, or anything else to commemorate the summer. Send in your material and we'll feature it in this year's video! 
+        {'\n'}You can use this <Text style={styles.linkText}  onPress={handleFormSubmit}>form</Text> to submit anything you like.
+        </Text>
+      
     </View>
     </ScrollView>
     <BottomNavigation navigation={navigation}/>
     </View>
+    
   );
 };
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
+    
   },
   scroll: {
     paddingHorizontal: '7%',
@@ -71,15 +76,6 @@ const styles = StyleSheet.create({
     fontFamily: 'AHRegular',
     fontSize: 16,
     textAlign: 'justify',
-    color: '#115BFB',
-    marginBottom: '7%'
-  },
-
-  locationText: {
-    alignSelf: 'flex-start',
-    fontFamily: 'AHItalic',
-    fontSize: 16,
-    textAlign: 'justify',
     marginBottom: '10%',
     color: '#115BFB',
 
@@ -97,8 +93,9 @@ const styles = StyleSheet.create({
     alignSelf: 'flex-start',
     fontFamily: 'AHBold',
     fontSize: 16,
-    textAlign: 'justify'
+    textAlign: 'justify',
+    
   }
 });
 
-export default Certificates;
+export default Pictures;

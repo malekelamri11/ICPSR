@@ -58,7 +58,6 @@ const styles = StyleSheet.create({
     height: 50,
     marginBottom: '15%',
   },
-  
   title: {
     paddingRight: '30%',
     marginTop: '7%',

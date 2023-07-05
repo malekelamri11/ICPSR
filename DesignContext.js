@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react';
 import { View, Text, Image, StyleSheet, ScrollView, Linking } from 'react-native';
-import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
-const CanvasAccess = ({navigation}) => {
+import * as Font from 'expo-font'
+
+
+const DesignContext = ({navigation}) => {
     const loadFonts = async () => {
   await Font.loadAsync({
     'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -14,34 +16,40 @@ const CanvasAccess = ({navigation}) => {
   useEffect(() => {
     loadFonts();
   }, []);
-  const handleAddDrop = () => {
-    Linking.openURL('https://www.google.com/maps/place/Burns+Park+Warming+Hut/@42.2664407,-83.7273434,15z/data=!4m2!3m1!1s0x0:0x1f86bb587ae224f5?sa=X&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhZEAA&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhdEAc')
+  const handleGradeForm = () => {
+    Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSdD-oLpbK1mtStPsGUUIECHg9C3gfFkcckkyxz3HQCpoAu1Uw/viewform')
+  }
+  const handleEITMCertification = () => {
+    Linking.openURL('https://eitminstitute.org/programs/certificate-program')
+  }
+  const handleTshirtForm = () => {
+    Linking.openURL('https://docs.google.com/forms/d/e/1FAIpQLSf43b45mnRzxBecFtkZIB6xkwNlpOvK5phhJXGC7rFHjdbdCQ/viewform')
+  }
+  const handlePreviousTshirt = () => {
+    Linking.openURL('https://drive.google.com/drive/u/1/folders/1ofWLOj7arIZnwsLHd8sojsKW97avrxGT')
   }
   return (
     <View style={styles.container}>
         <ScrollView>
             <View style= {styles.scroll}>
       <Image source={require('./assets/logo.png')} style={styles.logo} />
-      <Text style={styles.heading}>Canvas Access</Text>
-        <Text style={styles.paragraph}>
-        If you don't already, you should have access to all of your classes you requested in the<Text style={styles.linkText}  onPress={handleAddDrop}> add/drop form.</Text> Please let us know if you're still waiting on a change this afternoon! 
-        As a reminder, you will have access to your classes, including the recorded lectures, through December 31.
-        {'\n'}If you're taking a Course for a grade, work must be completed by the end of the Session! It is not required that you take any Course for a grade, you can audit any of them as you like and follow along at your own pace.
-     </Text>
-     
+      <Text style={styles.heading}>T-Shirt Design Contest</Text>
+       
+      <Text style={styles.paragraph}>
+        Our yearly T-shirts are designed and voted on by you! You can use this <Text style={styles.linkText}  onPress={handleTshirtForm}>Google Form</Text> to submit your design, and you can see some past shirts <Text style={styles.linkText}  onPress={handleTshirtForm}>here</Text> if you need inspiration.
+
+        {'\n'}We'll hold a vote in mid-August after everyone has had a chance to submit a design, and the shirts will be available for purchase soon after that, shipped right to you!
+      </Text> 
     </View>
     </ScrollView>
     <BottomNavigation navigation={navigation}/>
     </View>
-    
   );
 };
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: 'center',
-    
   },
   scroll: {
     paddingHorizontal: '7%',
@@ -77,6 +85,18 @@ const styles = StyleSheet.create({
     color: '#115BFB',
     marginBottom: '7%'
   },
+
+  locationText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHItalic',
+    fontSize: 16,
+    textAlign: 'justify',
+    marginBottom: '10%',
+    color: '#115BFB',
+
+
+
+  },
   normalText: {
     alignSelf: 'flex-start',
     fontFamily: 'AHRegular',
@@ -89,8 +109,14 @@ const styles = StyleSheet.create({
     fontFamily: 'AHBold',
     fontSize: 16,
     textAlign: 'justify',
-    
+    marginBottom: '10%'
+  },
+  boldText: {
+    alignSelf: 'flex-start',
+    fontFamily: 'AHBold',
+    fontSize: 16,
+    textAlign: 'justify'
   }
 });
 
-export default CanvasAccess;
+export default DesignContext;

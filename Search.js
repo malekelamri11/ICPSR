@@ -53,7 +53,7 @@ const SearchScreen = ({navigation}) => {
         <Image source={require('./assets/logo.png')} style={styles.logo} />
        
       <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What session are you enrolled in?</Text>
+      <Text style={styles.text}>What classes are you enrolled in?</Text>
       <View style={styles.pickerContainer}>
       <Picker
         
@@ -90,8 +90,8 @@ const SearchScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
      flex: 1,
-   },
-  logo: {
+    },
+   logo: {
     marginTop: '10%',
     width: 240,
     height: 50,

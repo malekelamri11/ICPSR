@@ -34,8 +34,19 @@ const Announcements = ({navigation}) => {
   const handlePreparation = () => {
     navigation.navigate('Preparation')
   }
-  const handleCanvasAccess = () => {
-    navigation.navigate('CanvasAccess')
+  const handleAddDrop = () => {
+    navigation.navigate('AddDrop')
+  }
+  const handleDesignContext = () => {
+    navigation.navigate('DesignContext')
+  }
+  const handlePicnics =()=> {
+    navigation.navigate('Picnics')
+
+  }
+  const handlePictures =()=> {
+    navigation.navigate('Pictures')
+
   }
   return (
     <View style={styles.container}>
@@ -48,7 +59,7 @@ const Announcements = ({navigation}) => {
         <TouchableOpacity style={{ width : '95%'}} onPress={handleWelcome}> 
         <View style={styles.square}>
             <Text style={styles.squareText}>3-Week courses second session starts today!</Text>
-            <Text style={styles.squareTextSmall}>Welcome to ICPSR summer program!</Text>
+             
         </View>
         </TouchableOpacity>
         
@@ -58,7 +69,7 @@ const Announcements = ({navigation}) => {
         </View>
         </TouchableOpacity>
         
-        <TouchableOpacity style={{ width : '95%'}} onPress={handleCanvasAccess}>
+        <TouchableOpacity style={{ width : '95%'}} onPress={handleAddDrop}>
         <View style={styles.square}>
             <Text style={styles.squareText}>Add and drop is due</Text>
         </View>
@@ -70,19 +81,27 @@ const Announcements = ({navigation}) => {
             
         </View>
         </TouchableOpacity>
+         
 
+        <TouchableOpacity style={{ width : '95%'}} onPress={handleDesignContext}>
         <View style={styles.square}>
             <Text style={styles.squareText}>T-Shirt Design Contest</Text>
-            <TouchableOpacity onPress={handleLinkPress}>
-            </TouchableOpacity>
         </View>
+        </TouchableOpacity>
 
+        <TouchableOpacity style={{ width : '95%'}} onPress={handlePicnics}> 
+        <View style={styles.square}>
+            <Text style={styles.squareText}>Newberry building is closed Saturday, July 30</Text>
+        </View>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={{ width : '95%'}} onPress={handlePictures}> 
         <View style={styles.square}>
             <Text style={styles.squareText}>Send in your pictures and memories!</Text>
-            <TouchableOpacity onPress={handleLinkPress}>
-            </TouchableOpacity>
         </View>
-        
+        </TouchableOpacity>
+
+       
       </View>
       </View>
       </ScrollView>

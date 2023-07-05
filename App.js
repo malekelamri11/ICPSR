@@ -31,7 +31,10 @@ import Coffee from './Coffee'
 import Lunch from './Lunch'
 import Blacklock from './Blacklock'
 import Certificates from './Certificates' 
-import CanvasAccess from './CanvasAccess'
+ 
+import DesignContext from './DesignContext'
+import Pictures from './Pictures'
+import AddDrop from'./AddDrop'
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -79,8 +82,8 @@ useEffect(() => {
       />
 
       <Stack.Screen
-      name = "CanvasAccess"
-      component={CanvasAccess}
+      name = "AddDrop"
+      component={AddDrop}
       options={{title:'Back'}}
       />
       <Stack.Screen
@@ -147,6 +150,18 @@ useEffect(() => {
       component={Certificates}
       options={{title:'Back'}}
       />
+      <Stack.Screen
+      name = "DesignContext"
+      component={DesignContext}
+      options={{title:'Back'}}
+      />
+
+      <Stack.Screen
+      name = "Pictures"
+      component={Pictures}
+      options={{title:'Back'}}
+      />    
+
       <Stack.Screen
       name = "Parking"
       component={Parking}

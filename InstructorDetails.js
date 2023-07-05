@@ -39,11 +39,12 @@ const styles = StyleSheet.create({
   },
   logo: {
     
-    marginTop: '8%',
-    width: 242,
-    height: 40,
+    marginTop: '10%',
+    width: 240,
+    height: 50,
     marginBottom: '15%',
   },
+  
   heading: {
     alignSelf: 'flex-start',
     color: '#313131',
