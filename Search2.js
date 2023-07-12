@@ -4,10 +4,10 @@ import {Picker} from '@react-native-picker/picker'
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
-const SearchScreen = ({navigation}) => {
+const SearchScreen2 = ({navigation}) => {
  
     const [selectedClass, setSelectedClass] = useState('');
-    const [data2, setData2] = useState([])
+    const [data1, setData1] = useState([])
     const loadFonts = async () => {
   await Font.loadAsync({
         'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -18,8 +18,8 @@ const SearchScreen = ({navigation}) => {
 
     const fetchData = async () => {
     try {
-      const jsonData = require('./assets/data/classSchedule.json')
-      setData2(jsonData);
+      const jsonData = require('./assets/data/classScheduleS1.json')
+      setData1(jsonData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -31,7 +31,7 @@ const SearchScreen = ({navigation}) => {
   }, []);
 
     const handleNextPress = () => {
-    const selectedItem = data2.find(item => item.Course === selectedClass);
+    const selectedItem = data1.find(item => item.Course === selectedClass);
     if (selectedItem) {
       navigation.navigate('CourseDetails', {
         course: selectedItem.Course,
@@ -53,7 +53,7 @@ const SearchScreen = ({navigation}) => {
         <Image source={require('./assets/logo.png')} style={styles.logo} />
        
       <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What classes are you enrolled in the second 3-week session?</Text>
+      <Text style={styles.text}>What classes are you enrolled in the first 3-week session?</Text>
       <View style={styles.pickerContainer}>
       <Picker
 
@@ -64,7 +64,7 @@ const SearchScreen = ({navigation}) => {
         
       >
         <Picker.Item label="select a Class..." value="" />
-        {data2.map((item) => (
+        {data1.map((item) => (
           <Picker.Item
             key={item.Course}
             label={item.Course}
@@ -149,4 +149,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchScreen;
+export default SearchScreen2;

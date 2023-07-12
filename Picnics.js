@@ -27,7 +27,7 @@ const Picnics = ({navigation}) => {
         All in-person participants, instructors, TAs, and their family are invited to join us at Burns Park for picnics with food and games. The Summer Program will provide main courses (grilled chicken, vegetarian option, hamburgers, hot dogs, etc.), sides, and drinks, and attendees are encouraged to bring a dessert to share.
         </Text>
       <Text style= {styles.normalText}>{'\u2022'} First Session Picnic : Saturday, July 1, 1:00 - 5:00 p.m. {'\n'}{'\u2022'} First Session Picnic : Saturday, July 29, 1:00 - 5:00 p.m.</Text>
-      <Text style= {styles.normalText }><Text style={styles.boldText}>Reminder: </Text> The Newberry Building will be closed on picnic days. </Text>
+      <Text style= {styles.normalText }><Text style={styles.boldText}>Reminder: </Text>The Newberry Building will be closed on picnic days. </Text>
     < Text style={styles.boldText}>
         Location:<Text style={styles.linkText}  onPress={handlePicnicLocation}> Burns Park Warming Hut,Wells St, Ann Arbor, MI 48104 </Text>
     </Text>

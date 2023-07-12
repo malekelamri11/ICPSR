@@ -1,0 +1,69 @@
+[
+ {
+  "Course": "An Introduction to Network Analysis",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:00 am - 5:00 pm",
+  "Location": "MH1449",
+  "Instructor": "Sokhey, Anand", 
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+ 
+
+ },
+ {
+  "Course": "Experiments in Social Science Research",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:00 am - 5:00 pm",
+  "Location": "MH 1427",
+  "Instructor": "Holbrook, Allyson",
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+
+ },
+ {
+  "Course": "Modern Causal Inference: Experiments, Matching, and Beyond",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:30 am - 5:30 pm",
+  "Location": "LSA 1280",
+  "Instructor": "Steinley, Doug",
+  "url": "https://maps.studentlife.umich.edu/building/literature-science-and-the-arts"
+
+
+ },
+ {
+  "Course": "Structural Equation Models",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:00 am - 5:00 pm",
+  "Location": "NQ1255",
+  "Instructor": "Baer, Doug",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+   
+
+ },
+ {
+  "Course": "Usage and Application of Meta-Analysis Techniques",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "8:30 am - 5:00 pm",
+  "Location": "NQ2255",
+  "Instructor": "Moyert, Mariola",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "An Introduction to Agent-Based Modeling for Social Scientists",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:00 am - 6:00 pm",
+  "Location": "MH 1469",
+  "Instructor": "Rand, Bill",
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+
+ },
+ {
+  "Course": "Applied Multilevel Models for Longitudinal and Clustered Data",
+  "Day": "Monday-Friday starting July 10 to July 14",
+  "Time": "9:00 am - 4:00 pm",
+  "Location": "MH 2306",
+  "Instructor": "Walters, Ryan",
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+
+ }
+]

@@ -15,7 +15,7 @@ const Classes = ({navigation}) => {
     loadFonts();
   }, []);
     const handleClassPress = () => {
-        navigation.navigate('Search')
+        navigation.navigate('Session')
     }
     const handleInstructorPress = () => {
       navigation.navigate('Offices')

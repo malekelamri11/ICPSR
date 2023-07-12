@@ -6,6 +6,7 @@ import { StyleSheet, TouchableOpacity, Image, Text, View, ScrollView } from 'rea
 import HomeScreen from './Home';
 import SupportScreen from './Support';
 import SearchScreen from './Search';
+import SearchScreen2 from './Search2';
 import Resources from './Resources';
 import CompassScreen from './Compass';
 import Events from './Events';
@@ -31,10 +32,14 @@ import Coffee from './Coffee'
 import Lunch from './Lunch'
 import Blacklock from './Blacklock'
 import Certificates from './Certificates' 
- 
+import SearchSession from './Session'
+
 import DesignContext from './DesignContext'
 import Pictures from './Pictures'
 import AddDrop from'./AddDrop'
+import SearchScreenInter from './inter'
+ 
+
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -67,161 +72,167 @@ useEffect(() => {
       <Stack.Screen
       name = "Announcements"
       component={Announcements}
-      options={{title:'Back'}}
       />
 
       <Stack.Screen
       name = "WelcomeToProgram"
       component={Welcome}
-      options={{title:'Back'}}
+      options={{title: 'Welcome'}}
+
       />
       <Stack.Screen
       name = "Preparation"
       component={Preparation}
-      options={{title:'Back'}}
       />
 
       <Stack.Screen
       name = "AddDrop"
       component={AddDrop}
-      options={{title:'Back'}}
+      options={{title: 'Add and Drop'}}
+
       />
       <Stack.Screen
       name = "BuildingsAcronyms"
       component={BuildingAcronyms}
-      options={{title:'Back'}}
+      options={{title: 'Building Details'}}
       />
       <Stack.Screen
       name = "BuildingDetails"
       component={BuildingDetails}
-      options={{title:'Back'}}
+      options={{title: 'Building Details'}}
+
       />
       <Stack.Screen
       name = "CourseDetails"
       component={CourseDetails}
-      options={{title:'Back'}}
+      options={{title: 'Course Details'}}
+
       />
       <Stack.Screen
       name = "Classes"
       component={Classes}
-      options={{title:'Back'}}
       />
     <Stack.Screen
       name = "Offices"
       component={Offices}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "InstructorDetails"
       component={InstructorDetails}
-      options={{title:'Back'}}
+      options={{title: 'Instructor Details'}}
+
       />  
 
       <Stack.Screen
       name = "Picnics"
       component={Picnics}
-      options={{title:'Back'}}
       />
 
       <Stack.Screen
       name = "Blacklock"
       component={Blacklock}
-      options={{title:'Back'}}
+      options={{title: 'Blalock'}}
+
       />
       <Stack.Screen
       name = "Lunch"
       component={Lunch}
-      options={{title:'Back'}}
       />
 
       <Stack.Screen
       name = "Coffee"
       component={Coffee}
-      options={{title:'Back'}}
       />
        
       <Stack.Screen
       name = "Resources"
       component={Resources}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "Certificates"
       component={Certificates}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "DesignContext"
       component={DesignContext}
-      options={{title:'Back'}}
+      options={{title: 'T-shirt Context'}}
+
       />
 
       <Stack.Screen
       name = "Pictures"
       component={Pictures}
-      options={{title:'Back'}}
       />    
 
       <Stack.Screen
       name = "Parking"
       component={Parking}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "InteractiveMap"
       component={InteractiveMap}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "UniversityAcronyms"
       component={UniversityAcronyms}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "BusSchedule"
       component={BusSchedule}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "MentalHealth"
       component={MentalHealth}
-      options={{title:'Back'}}
       />
       <Stack.Screen
       name = "Events"
       component={Events}
-      options={{title: 'Back'}}
       />
       <Stack.Screen
       name = "SummerFest"
       component={SummerFest}
-      options={{title: 'Back'}}
+      options={{title: 'Events details'}}
+
       />
       <Stack.Screen
       name = "ArtFair"
       component={ArtFair}
-      options={{title: 'Back'}}
       />
       <Stack.Screen
       name = "Acronyms"
       component={Acronyms}
-      options={{title: 'Back'}}
       />
       
       <Stack.Screen
       name = "Support"
       component={SupportScreen}
-      options = {{title: 'Back'}}
       />
       <Stack.Screen
       name = "Search"
       component={SearchScreen}
-      options={{title: 'Back'}}
+      options={{title: 'Session 2'}}
+      />
+       <Stack.Screen
+      name = "Search2"
+      component={SearchScreen2}
+      options={{title: 'Session 1'}}
+      />
+      <Stack.Screen
+      name = "inter"
+      component={SearchScreenInter}
+      options={{title: 'Intersession'}}
+      />
+
+      <Stack.Screen
+      name = "Session"
+      component={SearchSession}
+      options={{title: 'Sessions'}}
+
       />
       <Stack.Screen
       name = "Compass"
       component={CompassScreen }
-      options={{title: 'Back'}}
+      options={{title: 'Others'}}
       />
       
     

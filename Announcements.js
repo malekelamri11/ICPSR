@@ -91,7 +91,7 @@ const Announcements = ({navigation}) => {
 
         <TouchableOpacity style={{ width : '95%'}} onPress={handlePicnics}> 
         <View style={styles.square}>
-            <Text style={styles.squareText}>Newberry building is closed Saturday, July 30</Text>
+            <Text style={styles.squareText}>Newberry building is closed Saturday, July 29</Text>
         </View>
         </TouchableOpacity>
 

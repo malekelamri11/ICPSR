@@ -4,10 +4,9 @@ import {Picker} from '@react-native-picker/picker'
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
-const SearchScreen = ({navigation}) => {
+const SearchSession = ({navigation}) => {
  
-    const [selectedClass, setSelectedClass] = useState('');
-    const [data2, setData2] = useState([])
+    const [selectedSession, setSelectedSession] = useState('');
     const loadFonts = async () => {
   await Font.loadAsync({
         'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -16,34 +15,29 @@ const SearchScreen = ({navigation}) => {
         'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
       });}
 
-    const fetchData = async () => {
-    try {
-      const jsonData = require('./assets/data/classSchedule.json')
-      setData2(jsonData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
-    }
-  };
+     ;
   useEffect(() => {
     loadFonts();
 
-    fetchData();
+     
   }, []);
 
-    const handleNextPress = () => {
-    const selectedItem = data2.find(item => item.Course === selectedClass);
-    if (selectedItem) {
-      navigation.navigate('CourseDetails', {
-        course: selectedItem.Course,
-        day: selectedItem.Day,
-        location: selectedItem.Location,
-        time: selectedItem.Time,
-        instructor: selectedItem.Instructor,
-        url: selectedItem.url
-      });
+  const handleNextPress = () => {
+    switch(selectedSession) {
+      case 's1':
+        navigation.navigate('Search2');
+        break
+      
+      case 'is':
+        navigation.navigate('inter');
+        break
+      case 's2':
+        navigation.navigate('Search');
+        break
+      default:
+        return null
     }
-    // Handle the "Next" button press
-    // console.log('Next button pressed');
+    
   };
 
   return (
@@ -52,28 +46,24 @@ const SearchScreen = ({navigation}) => {
       <View style={styles.scroll}>
         <Image source={require('./assets/logo.png')} style={styles.logo} />
        
-      <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What classes are you enrolled in the second 3-week session?</Text>
+      <Text style={styles.title}>Session selection </Text>
+      <Text style={styles.text}>What session are you enrolled in?</Text>
+     
+     
       <View style={styles.pickerContainer}>
       <Picker
-
-        selectedValue={selectedClass}
-        onValueChange={(value) => setSelectedClass(value)}
+        selectedValue={selectedSession}
+        onValueChange={(value) => setSelectedSession(value)}
         style={styles.picker}
         mode='dropdown'
         
       >
-        <Picker.Item label="select a Class..." value="" />
-        {data2.map((item) => (
-          <Picker.Item
-            key={item.Course}
-            label={item.Course}
-            value={item.Course}
-            
-            
-          />
-        ))}
-      </Picker>
+         <Picker.Item label="select a Session..." value="" />
+        <Picker.Item label = "First 3-week session" value = "s1" />
+        <Picker.Item label = "Intersession and Blalocks" value = "is" />
+        <Picker.Item label = "Second 3-week session" value = "s2" />
+       </Picker>
+
       </View>
       <TouchableOpacity onPress={handleNextPress}>
         <View style={styles.nextButton}>
@@ -90,8 +80,8 @@ const SearchScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
      flex: 1,
-   },
-  logo: {
+    },
+   logo: {
     marginTop: '10%',
     width: 240,
     height: 50,
@@ -149,4 +139,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchScreen;
+export default SearchSession;

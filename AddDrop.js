@@ -25,7 +25,7 @@ const AddDrop = ({navigation}) => {
       <Text style={styles.heading}>Add Drop classes</Text>
         <Text style={styles.paragraph}>
         If you don't already, you should have access to all of your classes you requested in the<Text style={styles.linkText}  onPress={handleAddDrop}> add/drop form.</Text> Please let us know if you're still waiting on a change before July 21! 
-        {'\n'} As a reminder, you will have access to your classes, including the recorded lectures, through December 31.
+        {'\n'}As a reminder, you will have access to your classes, including the recorded lectures, through December 31.
         {'\n'}If you're taking a Course for a grade, work must be completed by the end of the Session! It is not required that you take any Course for a grade, you can audit any of them as you like and follow along at your own pace.
      </Text>
      

@@ -1,0 +1,159 @@
+[
+ {
+  "Course": "Bayesian Modeling for the Social Sciences I: Introduction and Application",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "SKB 3600",
+  "Instructor": "Justin Esarey",
+  "url": "https://maps.studentlife.umich.edu/building/school-of-kinesiology-building"
+
+
+ },
+ {
+  "Course": "Causal Inference for the Social Sciences I",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "CCCB 3420",
+  "Instructor": "Jake Bowers and Dr. Thomas Leavitt",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ 
+ {
+  "Course": "Data Visualization",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "CCCB 3460",
+  "Instructor": "Robert Cooper",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ {
+  "Course": "Machine Learning: Applications in Social Science Research",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "CCCB 3420",
+  "Instructor": "Chris Hare",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ {
+  "Course": "Maximum Likelihood Estimation I: Generalized Linear Models",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "NQ 1255",
+  "Instructor": "Bob Lupton",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "Measurement, Scaling, and Dimensional Analysis",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "NQ 2185",
+  "Instructor": "Adam Enders",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "Multilevel Models I: Introduction and Application",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "CCCB 0420",
+  "Instructor": "Mark Manning",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ {
+  "Course": "Advanced Multivariate Methods: Relations among Multiple Dependent and Independent Variables",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "NQ 2245",
+  "Instructor": "Sara Tomek",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ {
+  "Course": "Network Analysis I: Introduction",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "CCCB 0420",
+  "Instructor": "Sarah Shugars",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+
+ },
+ {
+  "Course": "Race, Ethnicity, and Quantitative Methodology I",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "NQ 2185",
+  "Instructor": "Kerem Ozan Kalkan",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "Race, Ethnicity, and Quantitative Methodology I",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "NQ 2185",
+  "Instructor": "Jamil Scott",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "Rational Choice Theories of Politics and Society",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "NQ 2245",
+  "Instructor": "James Johnson",
+  "url": "https://maps.studentlife.umich.edu/building/north-quadrangle-residential-and-academic-complex"
+
+ },
+ {
+  "Course": "Regression Analysis I: Introduction and Application",
+  "Day": "Monday-Friday starting June 19 to July 7",
+
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "LSA 1280",
+  "Instructor": "Shahryar Minhas",
+  "url": "https://maps.studentlife.umich.edu/building/literature-science-and-the-arts"
+
+ },
+ {
+  "Course": "Regression Analysis II: Linear Models",
+  "Day": "Monday-Friday starting June 19 to July 7",
+
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "MH 1427",
+  "Instructor": "Tim McDaniel",
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+
+ },
+ {
+  "Course": "Regression Analysis III: Advanced Methods",
+  "Day": "Monday-Friday starting June 19 to July 7",
+
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "LSA 1280",
+  "Instructor": "Dave Armstrong",
+  "url": "https://maps.studentlife.umich.edu/building/literature-science-and-the-arts"
+
+ },
+ {
+  "Course": "Statistics and Data Analysis I: Introduction",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "2:00 pm - 5:00 pm",
+  "Location": "MH 1427",
+  "Instructor": "Niccole Pamphilis",
+  "url": "https://maps.studentlife.umich.edu/building/mason-hall"
+
+ },
+ {
+  "Course": "Time Series Analysis I: Introduction",
+  "Day": "Monday-Friday starting June 19 to July 7",
+  "Time": "10:00 am - 1:00 pm",
+  "Location": "CCCB 3460",
+  "Instructor": "Clay Webb",
+  "url": "https://maps.studentlife.umich.edu/building/central-campus-classroom-building"
+ }
+]

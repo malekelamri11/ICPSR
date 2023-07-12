@@ -4,10 +4,10 @@ import {Picker} from '@react-native-picker/picker'
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
-const SearchScreen = ({navigation}) => {
+const SearchScreenInter = ({navigation}) => {
  
     const [selectedClass, setSelectedClass] = useState('');
-    const [data2, setData2] = useState([])
+    const [data3, setData3] = useState([])
     const loadFonts = async () => {
   await Font.loadAsync({
         'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
@@ -18,8 +18,8 @@ const SearchScreen = ({navigation}) => {
 
     const fetchData = async () => {
     try {
-      const jsonData = require('./assets/data/classSchedule.json')
-      setData2(jsonData);
+      const jsonData = require('./assets/data/classScheduleInter.json')
+      setData3(jsonData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -31,7 +31,7 @@ const SearchScreen = ({navigation}) => {
   }, []);
 
     const handleNextPress = () => {
-    const selectedItem = data2.find(item => item.Course === selectedClass);
+    const selectedItem = data3.find(item => item.Course === selectedClass);
     if (selectedItem) {
       navigation.navigate('CourseDetails', {
         course: selectedItem.Course,
@@ -53,7 +53,7 @@ const SearchScreen = ({navigation}) => {
         <Image source={require('./assets/logo.png')} style={styles.logo} />
        
       <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What classes are you enrolled in the second 3-week session?</Text>
+      <Text style={styles.text}>What classes are you enrolled in the intersession?</Text>
       <View style={styles.pickerContainer}>
       <Picker
 
@@ -64,7 +64,7 @@ const SearchScreen = ({navigation}) => {
         
       >
         <Picker.Item label="select a Class..." value="" />
-        {data2.map((item) => (
+        {data3.map((item) => (
           <Picker.Item
             key={item.Course}
             label={item.Course}
@@ -149,4 +149,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchScreen;
+export default SearchScreenInter;
