@@ -4,16 +4,7 @@ import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
 const Coffee = ({navigation}) => {
-    const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+   
   const handleCoffeeLocation = () => {
     Linking.openURL('https://www.google.com/maps/place/Helen+Newberry+Residence,+432+S+State+St,+Ann+Arbor,+MI+48109/@42.2769217,-83.7442561,17z/data=!3m1!4b1!4m6!3m5!1s0x883cae38aec5b077:0xa0470f57204df141!8m2!3d42.2769217!4d-83.7416758!16s%2Fg%2F1yl495hnr?entry=ttu')
   }

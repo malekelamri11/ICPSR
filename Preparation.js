@@ -4,16 +4,7 @@ import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
 const Preparation = ({navigation}) => {
-    const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+  
   const handle2FA = () => {
     Linking.openURL('https://its.umich.edu/accounts-access/computing-accounts/friend-accounts')
   }

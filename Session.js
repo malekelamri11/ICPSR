@@ -7,20 +7,7 @@ import * as Font from 'expo-font'
 const SearchSession = ({navigation}) => {
  
     const [selectedSession, setSelectedSession] = useState('');
-    const loadFonts = async () => {
-  await Font.loadAsync({
-        'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-        'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-        'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-        'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-      });}
-
-     ;
-  useEffect(() => {
-    loadFonts();
-
-     
-  }, []);
+   
 
   const handleNextPress = () => {
     switch(selectedSession) {

@@ -18,16 +18,7 @@ const HomeScreen = ({navigation}) => {
   const spacing = screenWidth / spacingFactor;
   return spacing;
   };
-  const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+ 
   const spacing = calculateSpacing();
     const handleEvents = () => {
         navigation.navigate('Events')
@@ -85,7 +76,7 @@ const HomeScreen = ({navigation}) => {
         navigation.navigate('SummerFest', {data} )
       }
         return (
-          <TouchableOpacity onPress={item.id === '1'   ? handleCoffee: handleEventPress && item.id === '2'   ? handleLunch: handleEventPress  && item.id === '3'   ? handlePicnics: handleEventPress && item.id === '4'   ? handleBlacklock: handleEventPress  }  >
+          <TouchableOpacity onPress={item.id === '1'   ? handleLunch: handleEventPress && item.id === '2'   ? handleCoffee : handleEventPress  && item.id === '3'   ? handlePicnics: handleEventPress && item.id === '4'   ? handleBlacklock: handleEventPress  }  >
                           
             <View style={styles.sliderItemTwo}>              
                 <Text style={styles.sliderText}>{item.name}</Text>
@@ -146,8 +137,9 @@ const HomeScreen = ({navigation}) => {
       <Carousel
       
     //   data = {['Summer festival', 'Juneteenth', 'Eid-al-Adha','First picnic', 'Art fair', 'Second picnic']}
-    data = {[{ id: '1', name: 'Coffee and donuts', date: 'Wendesdays mornings', url:'#', location:'location', location2: '', img:'./assets/events/summerFest.png', description: 'description'   },
-    { id: '2', name: 'Tidy tuesdays lunch meetup', date: 'Tuesdays noon', url:'#',  location:'location', location2:'', img:'./assets/events/juneteenth.png', description: 'description' },    
+    data = {[
+    { id: '1', name: 'Tidy tuesdays lunch meetup', date: 'Tuesdays noon', url:'#',  location:'location', location2:'', img:'./assets/events/juneteenth.png', description: 'description' },    
+    { id: '2', name: 'Coffee and donuts', date: 'Wendesdays mornings', url:'#', location:'location', location2: '', img:'./assets/events/summerFest.png', description: 'description'   },
     { id: '3', name: 'Picnics', date: 'July 1 and July 29', url:'#', location:'location', location2:'', img:'./assets/events/summerFest.png', description: 'description' },    
     { id: '4', name: 'Blalock', date: 'July 3 - July 12', location:'', location2:'', url:'', img:'', description: ' ' }]}
       renderItem={renderSecondSliderItem}

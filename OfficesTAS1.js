@@ -1,41 +1,36 @@
 import React, {useState, useEffect} from 'react';
-import { View, Image, Text, Button, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
-import {Picker} from '@react-native-picker/picker'
+import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import BottomNavigation from './BottomNavigation';
-import * as Font from 'expo-font'
+import {Picker} from '@react-native-picker/picker'
 
-const SearchScreenInter = ({navigation}) => {
- 
+
+const OfficeScreen = ({navigation}) => {
     const [selectedClass, setSelectedClass] = useState('');
-    const [data3, setData3] = useState([])
+    const [data2, setData2] = useState([])
     const fetchData = async () => {
     try {
-      const jsonData = require('./assets/data/classScheduleInter.json')
-      setData3(jsonData);
+      const jsonData = require('./assets/data/x.json')
+      setData2(jsonData);
     } catch (error) {
       console.error('Error fetching data:', error);
     }
   };
   useEffect(() => {
-    
-
     fetchData();
   }, []);
 
     const handleNextPress = () => {
-    const selectedItem = data3.find(item => item.Course === selectedClass);
+    const selectedItem = data2.find(item => item.Id === selectedClass);
     if (selectedItem) {
-      navigation.navigate('CourseDetails', {
-        course: selectedItem.Course,
-        day: selectedItem.Day,
-        location: selectedItem.Location,
-        time: selectedItem.Time,
-        instructor: selectedItem.Instructor,
-        url: selectedItem.url
+      navigation.navigate('InstructorDetails', {
+        room: selectedItem.Room,
+        firstName: selectedItem.FirstName,
+        lastName: selectedItem.LastName,
       });
+    
+    console.log(selectedItem)
     }
-    // Handle the "Next" button press
-    // console.log('Next button pressed');
+  
   };
 
   return (
@@ -43,28 +38,32 @@ const SearchScreenInter = ({navigation}) => {
       <ScrollView>
       <View style={styles.scroll}>
         <Image source={require('./assets/logo.png')} style={styles.logo} />
-       
-      <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What classes are you enrolled in the intersession?</Text>
+        <Text style={styles.title}>Instructors office</Text>
+      <Text style={styles.text}>What instructor office you are looking for in the first three-week session?</Text>
+
+     
+
       <View style={styles.pickerContainer}>
       <Picker
-
+        
         selectedValue={selectedClass}
         onValueChange={(value) => setSelectedClass(value)}
         style={styles.picker}
         mode='dropdown'
         
       >
-        <Picker.Item label="select a Class..." value="" />
-        {data3.map((item) => (
+        <Picker.Item label="select an Instructor..." value="" />
+        {data2.map((item) => {
+            let fullName = item.FirstName + ' ' + item.LastName
+            return (            
           <Picker.Item
-            key={item.Course}
-            label={item.Course}
-            value={item.Course}
+            key={item.Id}
+            label= {fullName}
+            value={item.Id}
             
             
           />
-        ))}
+        )})}
       </Picker>
       </View>
       <TouchableOpacity onPress={handleNextPress}>
@@ -81,8 +80,9 @@ const SearchScreenInter = ({navigation}) => {
 
 const styles = StyleSheet.create({
   container: {
-     flex: 1,
-   },
+    flex: 1,
+    
+  },
   logo: {
     marginTop: '10%',
     width: 240,
@@ -93,6 +93,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: '50%'
   },
+  text: {
+    fontSize: 16,
+    paddingHorizontal: '7%',
+    fontFamily: 'AHRegular',
+    alignSelf: 'flex-start',
+    marginBottom: '10%'
+  },
+
   title: {
     fontSize: 24,
     fontWeight: '400',
@@ -101,15 +109,14 @@ const styles = StyleSheet.create({
     marginBottom: '5%',
     alignSelf: 'flex-start'
   },
- 
-  text: {
-    fontSize: 16,
-    paddingHorizontal: '7%',
-    fontFamily: 'AHRegular',
+  
+  subtitle: {
     alignSelf: 'flex-start',
+    fontSize: 16,
+    fontFamily: 'AHRegular',
     marginBottom: '10%'
   },
-  nextButton : {  
+  nextButton : {
     width: '100%',
     alignItems : 'center',
     paddingHorizontal: '18%',
@@ -131,14 +138,12 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: '#2F65A780',
     borderRadius: 20,
-    width: '90%',
+    width: '95%',
     marginBottom: '5%',
 
     
   },
-  picker: { 
-    width: '100%',
-  },
+
 });
 
-export default SearchScreenInter;
+export default OfficeScreen;

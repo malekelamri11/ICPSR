@@ -4,18 +4,9 @@ import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
 const AddDrop = ({navigation}) => {
-    const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+    
   const handleAddDrop = () => {
-    Linking.openURL('https://www.google.com/maps/place/Burns+Park+Warming+Hut/@42.2664407,-83.7273434,15z/data=!4m2!3m1!1s0x0:0x1f86bb587ae224f5?sa=X&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhZEAA&ved=2ahUKEwih_8K-j-v_AhWkj4kEHYifDRQQ_BJ6BAhdEAc')
+    Linking.openURL('https://docs.google.com/forms/d/1LVRKFg3oLFoV9Pm5F9P8aEOzH6Ux01HvR1-Y6IQ7XEM/edit')
   }
   return (
     <View style={styles.container}>
@@ -24,7 +15,9 @@ const AddDrop = ({navigation}) => {
       <Image source={require('./assets/logo.png')} style={styles.logo} />
       <Text style={styles.heading}>Add Drop classes</Text>
         <Text style={styles.paragraph}>
-        If you don't already, you should have access to all of your classes you requested in the<Text style={styles.linkText}  onPress={handleAddDrop}> add/drop form.</Text> Please let us know if you're still waiting on a change before July 21! 
+        You must fill out the following<Text style={styles.linkText}  onPress={handleAddDrop}> add/drop form</Text> to add or drop courses from your Second Session schedule. You will be unable to add or drop courses through the Summer Program registration portal.
+        {'\n'}The Second Session add/drop deadline is Thursday, July 21, 11:59 p.m. EDT. After Thursday, July 21, no additional course changes will be allowed.
+        {'\n'}A reminder that you may register for up to four (4) Courses (plus unlimited Lectures) during the Second Session. Summer Program staff are unable to add you to more than four Courses during the Second Session.
         {'\n'}As a reminder, you will have access to your classes, including the recorded lectures, through December 31.
         {'\n'}If you're taking a Course for a grade, work must be completed by the end of the Session! It is not required that you take any Course for a grade, you can audit any of them as you like and follow along at your own pace.
      </Text>

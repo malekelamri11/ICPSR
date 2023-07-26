@@ -4,16 +4,7 @@ import * as Font from 'expo-font'
 import BottomNavigation from './BottomNavigation';
 
 const Pictures = ({navigation}) => {
-    const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+    
   const handleProgramScapbook = () => {
     Linking.openURL('https://www.youtube.com/watch?v=bWBkUAvUrs8')
   }

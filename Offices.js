@@ -2,24 +2,11 @@ import React, {useState, useEffect} from 'react';
 import { View, Text, Image, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 import BottomNavigation from './BottomNavigation';
 import {Picker} from '@react-native-picker/picker'
-import * as Font from 'expo-font'
+
 
 const Offices = ({navigation}) => {
-//   const data = [
-//     { id: 1, course: 'course1', day: 'Monday-friday', location: 'Location 1', time: '9am-5pm' },
-//     { id: 2, course: 'course2', day: 'Monday-friday', location: 'Location 2', time:'10am-4pm' },
-//     { id: 3, course: 'course3', day: 'Monday-thursday', location: 'Location 3', time: '12pm-6pm' },
-//   ];
     const [selectedClass, setSelectedClass] = useState('');
     const [data2, setData2] = useState([])
-    const loadFonts = async () => {
-    await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-
     const fetchData = async () => {
     try {
       const jsonData = require('./assets/data/Offices.json')
@@ -29,7 +16,6 @@ const Offices = ({navigation}) => {
     }
   };
   useEffect(() => {
-    loadFonts()  
     fetchData();
   }, []);
 
@@ -44,8 +30,7 @@ const Offices = ({navigation}) => {
     
     console.log(selectedItem)
     }
-    // Handle the "Next" button press
-    // console.log('Next button pressed');
+  
   };
 
   return (
@@ -54,7 +39,7 @@ const Offices = ({navigation}) => {
       <View style={styles.scroll}>
         <Image source={require('./assets/logo.png')} style={styles.logo} />
         <Text style={styles.title}>Instructors office</Text>
-      <Text style={styles.text}>What instructor office you are looking for?</Text>
+      <Text style={styles.text}>What instructor office you are looking for in the second three-week session?</Text>
 
      
 

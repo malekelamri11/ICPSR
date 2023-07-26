@@ -5,18 +5,7 @@ import * as Font from 'expo-font'
 
 const BuildingDetails = ({route, navigation}) => {
     const {acronym, location, name, url } = route.params;
-    const loadFonts = async () => {
-      await Font.loadAsync({
-        'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-        'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-        'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-        'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-      });}
-      useEffect(() => {
-        loadFonts();
-     
-      }, 
-      [])
+    
        const handleBuildingLocation = () => {
           Linking.openURL(url)
         }

@@ -33,28 +33,36 @@ import Lunch from './Lunch'
 import Blacklock from './Blacklock'
 import Certificates from './Certificates' 
 import SearchSession from './Session'
-
 import DesignContext from './DesignContext'
-import Pictures from './Pictures'
+import Pictures from './Pictures';
+
+import SearchSessionTA from './SessionTA';
 import AddDrop from'./AddDrop'
 import SearchScreenInter from './inter'
- 
-
+import OfficeScreen from './OfficesTAS1';
+import { useFonts } from 'expo-font';
 import * as Font from 'expo-font';
 import { LogBox } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
 const Stack = createNativeStackNavigator();
+
 LogBox.ignoreLogs(['ViewPropTypes will be removed']);
 LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
 LogBox.ignoreLogs(['Each child in a list should have a unique "key" prop']);
 
-
 export default function App() {
-  
-useEffect(() => {
-   }, []);
+  const [loaded] = useFonts({
+      'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
+      'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
+      'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
+      'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
+  });
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
     
     <NavigationContainer>
@@ -116,6 +124,14 @@ useEffect(() => {
       name = "Offices"
       component={Offices}
       />
+
+    <Stack.Screen
+      name = "OfficesTAS1"
+      component={OfficeScreen}
+      options={{title: 'Session1'}}
+
+      />
+
       <Stack.Screen
       name = "InstructorDetails"
       component={InstructorDetails}
@@ -213,6 +229,12 @@ useEffect(() => {
       options={{title: 'Session 2'}}
       />
        <Stack.Screen
+      name = "SessionTA"
+      component={SearchSessionTA}
+      options={{title: 'Sessions '}}
+      />
+
+       <Stack.Screen
       name = "Search2"
       component={SearchScreen2}
       options={{title: 'Session 1'}}
@@ -244,16 +266,6 @@ useEffect(() => {
 }
 
 const WelcomeScreen = ({navigation}) => {
-     const loadFonts = async () => {
-  await Font.loadAsync({
-      'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-      'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-      'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-      'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-    });}
-    useEffect(() => {
-      loadFonts();
-    }, []);
   const handleContinue = () => {
     navigation.navigate('Home')
   }
@@ -316,6 +328,7 @@ const styles = StyleSheet.create({
     marginBottom : '30%',
     marginTop: '25%',
     fontSize: 20,
+    fontFamily: 'AHRegular',
     margin: '5%'
    
    
@@ -327,7 +340,7 @@ const styles = StyleSheet.create({
   button: {
     // position : 'absolute',
     // top: 679,
-    marginTop: '30%',
+   
     backgroundColor: '#115BFB',
     alignSelf: 'center',
     width: '95%',
@@ -343,6 +356,7 @@ const styles = StyleSheet.create({
     
     color: 'white', 
     fontSize: 32, 
+    fontFamily: 'AHRegular',
     fontWeight: 400,
    
     

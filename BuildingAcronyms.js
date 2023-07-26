@@ -4,16 +4,7 @@ import { Picker } from '@react-native-picker/picker';
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 const BuildingAcronyms = ({navigation}) => {
-  const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+  
   const data = [
     { id: 1, acronym: 'ABC', name: 'Building ABC', location: 'Location 1' },
     { id: 2, acronym: 'DEF', name: 'Building DEF', location: 'Location 2' },

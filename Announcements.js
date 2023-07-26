@@ -12,16 +12,7 @@ const Logo = () => (
 
 
 const Announcements = ({navigation}) => {
-  const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+ 
   const handleLinkPress = () => {
     Linking.openURL('https://wolverineaccess.umich.edu/task/all/textbooks')
   }
@@ -71,7 +62,7 @@ const Announcements = ({navigation}) => {
         
         <TouchableOpacity style={{ width : '95%'}} onPress={handleAddDrop}>
         <View style={styles.square}>
-            <Text style={styles.squareText}>Add and drop is due</Text>
+            <Text style={styles.squareText}>Add and drop is due Thursday, July 21</Text>
         </View>
         </TouchableOpacity>
 

@@ -8,14 +8,7 @@ const SearchScreen = ({navigation}) => {
  
     const [selectedClass, setSelectedClass] = useState('');
     const [data2, setData2] = useState([])
-    const loadFonts = async () => {
-  await Font.loadAsync({
-        'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-        'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-        'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-        'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-      });}
-
+    
     const fetchData = async () => {
     try {
       const jsonData = require('./assets/data/classSchedule.json')
@@ -25,7 +18,7 @@ const SearchScreen = ({navigation}) => {
     }
   };
   useEffect(() => {
-    loadFonts();
+  
 
     fetchData();
   }, []);

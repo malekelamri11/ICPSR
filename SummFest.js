@@ -8,16 +8,7 @@ import * as Font from 'expo-font';
 const SummerFest = ({route, navigation}) => {
     const {data} = route.params;
     console.log(data.location2)
-    const loadFonts = async () => {
-  await Font.loadAsync({
-    'AHBold': require('./fonts/AtkinsonHyperlegible-Bold.ttf'),
-    'AHBoldItalic': require('./fonts/AtkinsonHyperlegible-BoldItalic.ttf'),
-    'AHItalic': require('./fonts/AtkinsonHyperlegible-Italic.ttf'),
-    'AHRegular': require('./fonts/AtkinsonHyperlegible-Regular.ttf'),
-  });}
-  useEffect(() => {
-    loadFonts();
-  }, []);
+    
     let imagePath;
     switch (data.name) {
     case 'Summer Festival':

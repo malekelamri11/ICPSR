@@ -4,38 +4,24 @@ import {Picker} from '@react-native-picker/picker'
 import BottomNavigation from './BottomNavigation';
 import * as Font from 'expo-font'
 
-const SearchScreenInter = ({navigation}) => {
+const SearchSessionTA = ({navigation}) => {
  
-    const [selectedClass, setSelectedClass] = useState('');
-    const [data3, setData3] = useState([])
-    const fetchData = async () => {
-    try {
-      const jsonData = require('./assets/data/classScheduleInter.json')
-      setData3(jsonData);
-    } catch (error) {
-      console.error('Error fetching data:', error);
+    const [selectedSession, setSelectedSession] = useState('');
+   
+
+  const handleNextPress = () => {
+    switch(selectedSession) {
+      case 's1':
+        navigation.navigate('OfficesTAS1');
+        break
+      
+      case 's2':
+        navigation.navigate('Offices');
+        break
+      default:
+        return null
     }
-  };
-  useEffect(() => {
     
-
-    fetchData();
-  }, []);
-
-    const handleNextPress = () => {
-    const selectedItem = data3.find(item => item.Course === selectedClass);
-    if (selectedItem) {
-      navigation.navigate('CourseDetails', {
-        course: selectedItem.Course,
-        day: selectedItem.Day,
-        location: selectedItem.Location,
-        time: selectedItem.Time,
-        instructor: selectedItem.Instructor,
-        url: selectedItem.url
-      });
-    }
-    // Handle the "Next" button press
-    // console.log('Next button pressed');
   };
 
   return (
@@ -44,28 +30,23 @@ const SearchScreenInter = ({navigation}) => {
       <View style={styles.scroll}>
         <Image source={require('./assets/logo.png')} style={styles.logo} />
        
-      <Text style={styles.title}>Class schedule</Text>
-      <Text style={styles.text}>What classes are you enrolled in the intersession?</Text>
+      <Text style={styles.title}>Session selection </Text>
+      <Text style={styles.text}>What session are you enrolled in?</Text>
+     
+     
       <View style={styles.pickerContainer}>
       <Picker
-
-        selectedValue={selectedClass}
-        onValueChange={(value) => setSelectedClass(value)}
+        selectedValue={selectedSession}
+        onValueChange={(value) => setSelectedSession(value)}
         style={styles.picker}
         mode='dropdown'
         
       >
-        <Picker.Item label="select a Class..." value="" />
-        {data3.map((item) => (
-          <Picker.Item
-            key={item.Course}
-            label={item.Course}
-            value={item.Course}
-            
-            
-          />
-        ))}
-      </Picker>
+         <Picker.Item label="select a Session..." value="" />
+        <Picker.Item label = "First 3-week session" value = "s1" />
+        <Picker.Item label = "Second 3-week session" value = "s2" />
+       </Picker>
+
       </View>
       <TouchableOpacity onPress={handleNextPress}>
         <View style={styles.nextButton}>
@@ -82,8 +63,8 @@ const SearchScreenInter = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
      flex: 1,
-   },
-  logo: {
+    },
+   logo: {
     marginTop: '10%',
     width: 240,
     height: 50,
@@ -141,4 +122,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default SearchScreenInter;
+export default SearchSessionTA;
